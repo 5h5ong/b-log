@@ -43,7 +43,7 @@ exports.createPages = async ({ graphql, actions }) => {
 };
 
 /**
- * fields에 값을 넣음
+ * Graphql의 특정 node에 field를 추가함
  * @remarks
  * 없으면 slug에 값이 없어 에러뜸
  */
@@ -57,21 +57,4 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value,
     });
   }
-};
-
-/**
- * 기존의 Graphql Schema에 새로운 타입을 추가할 수 있음
- */
-exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions;
-
-  createTypes(`
-    type Fields {
-      slug: String
-    }
-
-    type MarkdownRemark implements Node {
-      fields: Fields
-    }
-  `);
 };
