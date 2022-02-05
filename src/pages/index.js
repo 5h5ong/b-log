@@ -26,13 +26,17 @@ const IndexPage = ({ data }) => {
         <title>Home Page</title>
         <h1>It's basic bLog</h1>
         {posts.map((post) => {
-          const { title, slug } = post.frontmatter;
+          const {
+            fields: { slug },
+          } = post;
+          const { title, date } = post.frontmatter;
           return (
-            <h2>
-              <Link to={slug}>
+            <Link to={slug}>
+              <h2>
                 <span>{title}</span>
-              </Link>
-            </h2>
+              </h2>
+              <div>{date}</div>
+            </Link>
           );
         })}
       </main>
@@ -47,6 +51,9 @@ export const pageQuery = graphql`
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
+        }
+        id
+        fields {
           slug
         }
       }
