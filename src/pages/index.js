@@ -1,7 +1,8 @@
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import * as React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
+import PostPreview from "../components/PostPreview";
 
 // styles
 const Main = styled.main`
@@ -9,7 +10,9 @@ const Main = styled.main`
 `;
 const H1 = styled.h1`
   ${tw`
+    font-mono
     text-5xl
+    mb-16
   `}
 `;
 
@@ -21,7 +24,7 @@ const IndexPage = ({ data }) => {
     return (
       <Main>
         <title>Home Page</title>
-        <H1>It's basic bLog</H1>
+        <H1>It's b:LOG</H1>
         <p>No bLog posts Found.</p>
       </Main>
     );
@@ -29,22 +32,13 @@ const IndexPage = ({ data }) => {
     return (
       <Main>
         <title>Home Page</title>
-        <H1>It's basic bLog</H1>
+        <H1>It's b:LOG</H1>
         {posts.map((post) => {
           const {
             fields: { slug },
           } = post;
           const { title, date } = post.frontmatter;
-          return (
-            <>
-              <Link to={slug}>
-                <h2>
-                  <span>{title}</span>
-                </h2>
-                <div>{date}</div>
-              </Link>
-            </>
-          );
+          return <PostPreview title={title} date={date} to={slug} />;
         })}
       </Main>
     );
