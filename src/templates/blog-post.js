@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import styled from "styled-components";
 import tw from "twin.macro";
+import Seo from "../components/Seo";
 
 const Container = styled.div`
   ${tw`max-w-screen-md m-auto my-40`}
@@ -81,6 +82,7 @@ const BlogPostTemplate = ({ data }) => {
 
   return (
     <Container>
+      <Seo title={frontmatter.title} />
       <Header>
         <BlogTitle>{frontmatter.title}</BlogTitle>
         <p>{frontmatter.date}</p>

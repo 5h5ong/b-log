@@ -3,6 +3,7 @@ import * as React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import PostPreview from "../components/PostPreview";
+import Seo from "../components/Seo";
 
 // styles
 const Main = styled.main`
@@ -16,6 +17,15 @@ const H1 = styled.h1`
   `}
 `;
 
+const Header = () => {
+  return (
+    <>
+      <Seo title="Home Page" />
+      <H1>It's b:LOG</H1>
+    </>
+  );
+};
+
 // markup
 const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes;
@@ -23,16 +33,14 @@ const IndexPage = ({ data }) => {
   if (posts.length === 0) {
     return (
       <Main>
-        <title>Home Page</title>
-        <H1>It's b:LOG</H1>
+        <Header />
         <p>No bLog posts Found.</p>
       </Main>
     );
   } else {
     return (
       <Main>
-        <title>Home Page</title>
-        <H1>It's b:LOG</H1>
+        <Header />
         {posts.map((post) => {
           const {
             fields: { slug },
