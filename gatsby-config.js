@@ -19,7 +19,29 @@ module.exports = {
         path: `${__dirname}/content/blog`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: true,
+              noInlineHighlight: true,
+              prompt: {
+                user: "call5h5ong",
+                host: "localhost",
+                global: false,
+              },
+              escapeEntities: {},
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-styled-components`,
   ],
 };

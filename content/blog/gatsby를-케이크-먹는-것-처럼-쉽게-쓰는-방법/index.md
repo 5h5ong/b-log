@@ -45,9 +45,8 @@ Gatsby를 설치했다면, 이어서 아래의 패키지를 설치하세요.
 
 ### 마크다운
 
-```typescript
+```jsx
 // `gatsby-config.js`
-
 plugins: [
   {
     resolve: `gatsby-source-filesystem`,
@@ -77,7 +76,7 @@ plugins: [
 
 먼저 마크다운을 표시할 페이지의 틀을 만들어줘야 합니다.
 
-```typescript
+```jsx
 // templates/blog-post.js
 const BlogPostTemplate = ({ data }) => {
   // 마크다운 가져오기
@@ -225,7 +224,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 바로 생성된 블로그의 글들을, 페이지들을, 사람들에게 보여줘야 한다는 것!
 
-```typescript
+```jsx
 const IndexPage = ({ data }) => {
   // 페이지들 가져오기
   const posts = data.allMarkdownRemark.nodes;
