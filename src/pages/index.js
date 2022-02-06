@@ -1,12 +1,17 @@
 import { graphql, Link } from "gatsby";
 import * as React from "react";
+import styled from "styled-components";
+import tw from "twin.macro";
 
 // styles
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-};
+const Main = styled.main`
+  ${tw`p-64`}
+`;
+const H1 = styled.h1`
+  ${tw`
+    text-5xl
+  `}
+`;
 
 // markup
 const IndexPage = ({ data }) => {
@@ -14,32 +19,34 @@ const IndexPage = ({ data }) => {
 
   if (posts.length === 0) {
     return (
-      <main style={pageStyles}>
+      <Main>
         <title>Home Page</title>
-        <h1>It's basic bLog</h1>
+        <H1>It's basic bLog</H1>
         <p>No bLog posts Found.</p>
-      </main>
+      </Main>
     );
   } else {
     return (
-      <main style={pageStyles}>
+      <Main>
         <title>Home Page</title>
-        <h1>It's basic bLog</h1>
+        <H1>It's basic bLog</H1>
         {posts.map((post) => {
           const {
             fields: { slug },
           } = post;
           const { title, date } = post.frontmatter;
           return (
-            <Link to={slug}>
-              <h2>
-                <span>{title}</span>
-              </h2>
-              <div>{date}</div>
-            </Link>
+            <>
+              <Link to={slug}>
+                <h2>
+                  <span>{title}</span>
+                </h2>
+                <div>{date}</div>
+              </Link>
+            </>
           );
         })}
-      </main>
+      </Main>
     );
   }
 };

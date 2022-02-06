@@ -15,7 +15,7 @@ Google Keeps, Simplenote, Obsidian.md, Joplin, Onenote, Turtl... 으악!
 
 자고로 기록이란 제 두 손아귀에 원본이 쥐어 져야만 편안한 기분이 들지 않겠어요? 언젠가 `Notion`이 오프라인 저장을 지원해 주리라 믿었지만 결국 저를 배신해버린 겁니다. 그렇게 나오신다 이 말이죠? 까라면 까라지..
 
-결국 목마른 놈이 우물을 판다고 하죠? 흑흑...
+결국 목마른 놈이 우물을 판다고 하죠?
 
 그렇게 모든, 진짜로 모든 것! 을 직접 가질 수 있는 방법이 없나 찾아보다 결국 블로그의 마수에 빠지게 된 겁니다. 어찌 이럴수가.
 
@@ -23,7 +23,7 @@ Google Keeps, Simplenote, Obsidian.md, Joplin, Onenote, Turtl... 으악!
 
 [The Fastest Frontend Framework for Headless CMS's | Gatsby (gatsbyjs.com)](https://www.gatsbyjs.com/)
 
-그래서 선택했습니다! Gatsby! 리엑트를 기반으로 해서 깔끔한 정적 사이트를 만들어주는 프레임워크라니, 정말 완벽하지 않나요..?
+그래서 선택했습니다! Gatsby! 리엑트를 기반으로 깔끔한 정적 사이트를 만들어주는 프레임워크라니, 정말 완벽하지 않나요..?
 
 ## 준비물
 
@@ -197,27 +197,6 @@ exports.createPages = async ({ graphql, actions }) => {
 
 ```typescript
 /**
- * 기존의 Graphql Schema에 새로운 타입을 추가할 수 있음
- */
-exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions;
-
-  createTypes(`
-    type Fields {
-      slug: String
-    }
-
-    type MarkdownRemark implements Node {
-      fields: Fields
-    }
-  `);
-};
-```
-
-먼저 기존의 Graphql Schema에 fields를 추가해줘야 해요. 다음과 같이 입력해주면 MarkdownRemark에 fields가 새로 추가된 거에요!
-
-```typescript
-/**
  * node에 페이지의 주소를 담은 slug field를 추가함
  */
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -233,8 +212,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 };
 ```
 
-다음으로, slug field를 만들어 페이지를 접근하는데 쓰일 주소를 만들어 넣어줘야 해요.
-이 과정이 없으면 Graphql을 이용해 query할 때 slug에 아무 값도 없어 제대로 동작하지 않아요.
+위와 같이 `gatsby-node.js`에 slug field를 만들어 페이지를 접근하는데 쓰일 주소를 넣어줘야 해요.
+이 과정이 없으면 query할 때 slug에 아무 값도 없어 제대로 동작하지 않아요.
 
 ### 페이지 보여주기
 
