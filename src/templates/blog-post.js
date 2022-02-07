@@ -35,7 +35,7 @@ const Section = styled.section`
   }
   h1 {
     ${tw`
-    text-6xl 
+    text-5xl 
     before:text-gray-300
     before:content-['#']
     before:ml-[-2rem]
@@ -43,7 +43,7 @@ const Section = styled.section`
   }
   h2 {
     ${tw`
-    text-5xl 
+    text-4xl 
     before:text-gray-300
     before:content-['##']
     before:ml-[-3.25rem]
@@ -51,7 +51,7 @@ const Section = styled.section`
   }
   h3 {
     ${tw`
-    text-4xl 
+    text-3xl 
     before:text-gray-300
     before:content-['###']
     before:ml-[-3.6rem]
@@ -59,7 +59,7 @@ const Section = styled.section`
   }
   h4 {
     ${tw`
-    text-3xl 
+    text-2xl 
     before:text-gray-300
     before:content-['####']
     before:ml-[-4rem]
@@ -67,7 +67,7 @@ const Section = styled.section`
   }
   h5 {
     ${tw`
-    text-2xl 
+    text-xl 
     before:text-gray-300
     before:content-['#####']
     before:ml-[-4rem]
@@ -75,7 +75,7 @@ const Section = styled.section`
   }
   h6 {
     ${tw`
-    text-xl 
+    text-lg
     before:text-gray-300
     before:content-['######']
     before:ml-[-4rem]
