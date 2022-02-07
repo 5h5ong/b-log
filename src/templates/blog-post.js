@@ -5,15 +5,22 @@ import tw, { styled } from "twin.macro";
 import Seo from "../components/Seo";
 
 const Container = tw.div`
-  max-w-screen-md m-auto my-40
+  my-40
+`;
+
+const SectionContainer = tw.div`
+  max-w-screen-md m-auto
 `;
 
 const Header = tw.header`
-  mb-14
+  max-w-screen-lg
+  m-auto
+  mb-28
 `;
 
 const BlogTitle = tw.h1`
-  text-4xl
+  mb-0
+  text-6xl
 `;
 
 /**
@@ -85,9 +92,11 @@ const BlogPostTemplate = ({ data }) => {
       <Seo title={frontmatter.title} />
       <Header>
         <BlogTitle>{frontmatter.title}</BlogTitle>
-        <p>{frontmatter.date}</p>
+        <span>{frontmatter.date}</span>
       </Header>
-      <Section dangerouslySetInnerHTML={{ __html: html }} />
+      <SectionContainer>
+        <Section dangerouslySetInnerHTML={{ __html: html }} />
+      </SectionContainer>
     </Container>
   );
 };
