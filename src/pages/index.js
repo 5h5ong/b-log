@@ -1,20 +1,17 @@
 import { graphql } from "gatsby";
+// import * as React from "react";
 import * as React from "react";
-import styled from "styled-components";
 import tw from "twin.macro";
 import PostPreview from "../components/PostPreview";
 import Seo from "../components/Seo";
 
-// styles
-const Main = styled.main`
-  ${tw`p-64`}
+const Main = tw.main`
+  p-64
 `;
-const H1 = styled.h1`
-  ${tw`
-    font-mono
-    text-5xl
-    mb-16
-  `}
+const H1 = tw.h1`
+  text-5xl
+  font-mono
+  mb-16
 `;
 
 const Header = () => {

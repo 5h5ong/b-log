@@ -1,19 +1,19 @@
-import React from "react";
+import * as React from "react";
 import { graphql } from "gatsby";
-import styled from "styled-components";
-import tw from "twin.macro";
+// import styled from "styled-components";
+import tw, { styled } from "twin.macro";
 import Seo from "../components/Seo";
 
-const Container = styled.div`
-  ${tw`max-w-screen-md m-auto my-40`}
+const Container = tw.div`
+  max-w-screen-md m-auto my-40
 `;
 
-const Header = styled.header`
-  ${tw`mb-14`}
+const Header = tw.header`
+  mb-14
 `;
 
-const BlogTitle = styled.h1`
-  ${tw`text-4xl`}
+const BlogTitle = tw.h1`
+  text-4xl
 `;
 
 /**

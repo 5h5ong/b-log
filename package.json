@@ -34,5 +34,11 @@
   },
   "devDependencies": {
     "twin.macro": "^2.8.2"
+  },
+  "babelMacros": {
+    "twin": {
+      "config": "./tailwind.config.js",
+      "preset": "styled-components"
+    }
   }
 }
