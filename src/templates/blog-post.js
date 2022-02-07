@@ -1,8 +1,8 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-// import styled from "styled-components";
 import tw, { styled } from "twin.macro";
 import Seo from "../components/Seo";
+import BlogHeader from "../components/BlogHeader";
 
 const Container = tw.div`
   my-40
@@ -88,16 +88,19 @@ const BlogPostTemplate = ({ data }) => {
   const { frontmatter, html } = markdownRemark;
 
   return (
-    <Container>
-      <Seo title={frontmatter.title} />
-      <Header>
-        <BlogTitle>{frontmatter.title}</BlogTitle>
-        <span>{frontmatter.date}</span>
-      </Header>
-      <SectionContainer>
-        <Section dangerouslySetInnerHTML={{ __html: html }} />
-      </SectionContainer>
-    </Container>
+    <>
+      <BlogHeader title="b:LOG" />
+      <Container>
+        <Seo title={frontmatter.title} />
+        <Header>
+          <BlogTitle>{frontmatter.title}</BlogTitle>
+          <span>{frontmatter.date}</span>
+        </Header>
+        <SectionContainer>
+          <Section dangerouslySetInnerHTML={{ __html: html }} />
+        </SectionContainer>
+      </Container>
+    </>
   );
 };
 

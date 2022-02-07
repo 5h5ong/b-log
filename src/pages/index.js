@@ -2,23 +2,19 @@ import { graphql } from "gatsby";
 // import * as React from "react";
 import * as React from "react";
 import tw from "twin.macro";
+import BlogHeader from "../components/BlogHeader";
 import PostPreview from "../components/PostPreview";
 import Seo from "../components/Seo";
 
 const Main = tw.main`
   p-64
 `;
-const H1 = tw.h1`
-  text-5xl
-  font-mono
-  mb-16
-`;
 
 const Header = () => {
   return (
     <>
       <Seo title="Home Page" />
-      <H1>It's b:LOG</H1>
+      <BlogHeader title="It's b:LOG" />
     </>
   );
 };
