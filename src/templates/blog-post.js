@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import tw, { styled } from "twin.macro";
 import Seo from "../components/Seo";
 import BlogHeader from "../components/BlogHeader";
+import Toc from "../components/Toc";
 
 const Container = tw.div`
   my-40
@@ -85,7 +86,7 @@ const Section = styled.section`
 
 const BlogPostTemplate = ({ data }) => {
   const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;
+  const { frontmatter, html, tableOfContents } = markdownRemark;
 
   return (
     <>
@@ -97,6 +98,7 @@ const BlogPostTemplate = ({ data }) => {
           <span>{frontmatter.date}</span>
         </Header>
         <SectionContainer>
+          <Toc html={tableOfContents} />
           <Section dangerouslySetInnerHTML={{ __html: html }} />
         </SectionContainer>
       </Container>
@@ -111,6 +113,7 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
+      tableOfContents
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
