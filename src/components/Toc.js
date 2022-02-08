@@ -6,12 +6,18 @@ const Container = styled.div`
   ${tw`
   relative
   left-full
+  pl-20
   `}
 
   ul {
     ${tw`
-    inline-block
+    list-none
+    pl-4
     `}
+  }
+
+  li {
+    ${tw`first:m-0 mt-3`}
   }
 
   a {
@@ -24,6 +30,7 @@ const Container = styled.div`
 
 const Contents = tw.div`
   fixed
+  w-96
 `;
 
 const Toc = ({ html }) => {
