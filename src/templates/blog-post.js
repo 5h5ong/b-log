@@ -39,7 +39,7 @@ const Section = styled.section`
     text-5xl 
     before:text-gray-300
     before:content-['#']
-    before:ml-[-2rem]
+    before:ml-[-1.6rem]
     `}
   }
   h2 {
@@ -47,7 +47,7 @@ const Section = styled.section`
     text-4xl 
     before:text-gray-300
     before:content-['##']
-    before:ml-[-3.25rem]
+    before:ml-[-2.4rem]
     `}
   }
   h3 {
@@ -55,7 +55,7 @@ const Section = styled.section`
     text-3xl 
     before:text-gray-300
     before:content-['###']
-    before:ml-[-3.6rem]
+    before:ml-[-3rem]
     `}
   }
   h4 {
@@ -63,7 +63,7 @@ const Section = styled.section`
     text-2xl 
     before:text-gray-300
     before:content-['####']
-    before:ml-[-4rem]
+    before:ml-[-3.1rem]
     `}
   }
   h5 {
@@ -71,7 +71,7 @@ const Section = styled.section`
     text-xl 
     before:text-gray-300
     before:content-['#####']
-    before:ml-[-4rem]
+    before:ml-[-3.3rem]
     `}
   }
   h6 {
@@ -79,7 +79,7 @@ const Section = styled.section`
     text-lg
     before:text-gray-300
     before:content-['######']
-    before:ml-[-4rem]
+    before:ml-[-3.5rem]
     `}
   }
 `;
