@@ -3,34 +3,18 @@ title: 두번째 글
 date: "2022-02-04"
 ---
 
-# TEST
+# 1
 
-## TEST2
+## 2
 
-## TEST2
+### 3
 
-### TEST3
+### 3
 
-### TEST3
+## 2
 
-### TEST3
+### 3
 
-#### TEST4
+### 3
 
-##### TEST5
-
-##### TEST5
-
-#### TEST4
-
-##### TEST5
-
-##### TEST5
-
-##### TEST5
-
-###### TEST6
-
-## TEST2
-
-# TEST
+## 2
