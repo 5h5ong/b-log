@@ -6,7 +6,7 @@ const Container = styled.div`
   ${tw`
   relative
   left-full
-  pl-20
+  pl-28
   `}
 
   ul {
@@ -20,17 +20,23 @@ const Container = styled.div`
     ${tw`first:m-0 mt-3`}
   }
 
+  p {
+    ${tw`truncate`}
+  }
+
   a {
     ${tw`
-    text-black 
+    text-gray-600 hover:text-gray-900 text-sm
     no-underline
     `}
   }
 `;
 
-const Contents = tw.div`
-  fixed
-  w-96
+const Contents = styled.div`
+  ${tw`
+  fixed w-80 rounded-3xl p-5 
+  `}
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
 `;
 
 const Toc = ({ html }) => {

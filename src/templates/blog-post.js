@@ -5,8 +5,8 @@ import Seo from "../components/Seo";
 import BlogHeader from "../components/BlogHeader";
 import Toc from "../components/Toc";
 
-const Container = tw.div`
-  my-40
+const Container = styled.div`
+  ${tw`my-40`};
 `;
 
 const SectionContainer = tw.div`
