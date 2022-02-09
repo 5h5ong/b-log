@@ -34,6 +34,12 @@ const Section = styled.section`
   code {
     ${tw`text-sm`}
   }
+
+  /* Image Caption etc) alt, title... [alt](./...png "title") */
+  .gatsby-resp-image-figcaption {
+    ${tw`flex justify-center mt-2 text-sm text-gray-500`}
+  }
+
   h1 {
     ${tw`
     text-5xl 

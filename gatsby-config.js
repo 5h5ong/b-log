@@ -27,7 +27,7 @@ module.exports = {
             resolve: `gatsby-remark-prismjs`,
             options: {
               classPrefix: "language-",
-              inlineCodeMarker: null,
+              inlineCodeMarker: "›",
               aliases: {},
               showLineNumbers: true,
               noInlineHighlight: true,
@@ -46,6 +46,7 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               maxWidth: 590,
+              showCaptions: true,
             },
           },
           `gatsby-remark-autolink-headers`,
