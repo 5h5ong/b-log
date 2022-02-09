@@ -1,7 +1,8 @@
 module.exports = {
+  pathPrefix: "/b-log",
   siteMetadata: {
     title: `bLOG`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://5h5ong.github.io/b-log/`,
   },
   plugins: [
     {
