@@ -1,5 +1,6 @@
 module.exports = {
-  pathPrefix: "/b-log",
+  pathPrefix: process.env.NODE_ENV === "production" ? "/b-log" : "/",
+  // pathPrefix: "/b-log",
   siteMetadata: {
     title: `bLOG`,
     siteUrl: `https://5h5ong.github.io/b-log/`,
