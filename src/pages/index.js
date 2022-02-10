@@ -10,6 +10,10 @@ const Main = tw.main`
   p-64
 `;
 
+const PostContainer = tw.div`
+  mb-16
+`;
+
 const Header = () => {
   return (
     <>
@@ -39,7 +43,11 @@ const IndexPage = ({ data }) => {
             fields: { slug },
           } = post;
           const { title, date } = post.frontmatter;
-          return <PostPreview title={title} date={date} to={slug} />;
+          return (
+            <PostContainer>
+              <PostPreview title={title} date={date} to={slug} />{" "}
+            </PostContainer>
+          );
         })}
       </Main>
     );
