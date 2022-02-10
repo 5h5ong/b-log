@@ -31,8 +31,21 @@ const Section = styled.section`
   p {
     ${tw`text-lg`}
   }
+
   code {
     ${tw`text-sm`}
+  }
+
+  table {
+    ${tw`table-auto p-5 rounded-xl m-auto border border-gray-400 border-solid`}/* border: solid 1px black; */
+  }
+
+  th {
+    ${tw`pb-4 border-0 border-b border-gray-200 border-solid`}
+  }
+
+  td {
+    ${tw`p-3 text-gray-600 text-sm`}
   }
 
   /* Image Caption etc) alt, title... [alt](./...png "title") */
