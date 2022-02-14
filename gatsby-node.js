@@ -9,6 +9,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`);
+  const tagPage = path.resolve(`./src/templates/tag-page.js`);
 
   const result = await graphql(`
     query {
@@ -19,12 +20,19 @@ exports.createPages = async ({ graphql, actions }) => {
             slug
           }
         }
+        group(field: frontmatter___tags) {
+          fieldValue
+        }
       }
     }
   `);
 
   const posts = result.data.allMarkdownRemark.nodes;
+  const tags = result.data.allMarkdownRemark.group;
 
+  /**
+   * Create blog post page
+   */
   if (posts.length > 0) {
     posts.forEach((post, index) => {
       const {
@@ -36,6 +44,22 @@ exports.createPages = async ({ graphql, actions }) => {
         component: blogPost,
         context: {
           id: id,
+        },
+      });
+    });
+  }
+
+  /**
+   * Create tag detail page
+   */
+  if (tags.length > 0) {
+    tags.forEach((tagObject) => {
+      const { fieldValue } = tagObject;
+      createPage({
+        path: `/tags/${fieldValue}`,
+        component: tagPage,
+        context: {
+          tag: fieldValue,
         },
       });
     });
