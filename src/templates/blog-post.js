@@ -4,6 +4,7 @@ import tw, { styled } from "twin.macro";
 import Seo from "../components/Seo";
 import BlogHeader from "../components/BlogHeader";
 import Toc from "../components/Toc";
+import Tag from "../components/Tag";
 
 const Container = styled.div`
   ${tw`my-40`};
@@ -23,6 +24,8 @@ const BlogTitle = tw.h1`
   mb-0
   text-6xl
 `;
+
+const GapHorizontality = tw.span`last:m-0 mr-2`;
 
 /**
  * Markdown Style
@@ -114,7 +117,14 @@ const BlogPostTemplate = ({ data }) => {
         <Seo title={frontmatter.title} />
         <Header>
           <BlogTitle>{frontmatter.title}</BlogTitle>
-          <span>{frontmatter.date}</span>
+          <GapHorizontality>
+            <span>{frontmatter.date}</span>
+          </GapHorizontality>
+          {frontmatter.tags.map((tag) => (
+            <GapHorizontality>
+              <Tag name={tag} />
+            </GapHorizontality>
+          ))}
         </Header>
         <SectionContainer>
           <Toc html={tableOfContents} />
@@ -136,6 +146,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        tags
       }
     }
   }
