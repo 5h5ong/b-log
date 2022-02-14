@@ -119,7 +119,7 @@ const BlogPostTemplate = ({ data }) => {
           <GapHorizontality>
             <span>{frontmatter.date}</span>
           </GapHorizontality>
-          {frontmatter.tags.map((tag) => (
+          {frontmatter.tags?.map((tag) => (
             <GapHorizontality>
               <Tag name={tag} />
             </GapHorizontality>
