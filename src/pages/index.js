@@ -3,15 +3,12 @@ import { graphql } from "gatsby";
 import * as React from "react";
 import tw from "twin.macro";
 import BlogHeader from "../components/BlogHeader";
+import ElementGapWrapper from "../components/ElementGapWrapper";
 import PostPreview from "../components/PostPreview";
 import Seo from "../components/Seo";
 
 const Main = tw.main`
   p-64
-`;
-
-const PostContainer = tw.div`
-  mb-16
 `;
 
 const Header = () => {
@@ -44,9 +41,9 @@ const IndexPage = ({ data }) => {
           } = post;
           const { title, date } = post.frontmatter;
           return (
-            <PostContainer>
-              <PostPreview title={title} date={date} to={slug} />{" "}
-            </PostContainer>
+            <ElementGapWrapper>
+              <PostPreview title={title} date={date} to={slug} />
+            </ElementGapWrapper>
           );
         })}
       </Main>

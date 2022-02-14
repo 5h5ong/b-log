@@ -1,13 +1,30 @@
 import { graphql } from "gatsby";
 import React from "react";
+import tw from "twin.macro";
+import BlogHeader from "../components/BlogHeader";
+import ElementGapWrapper from "../components/ElementGapWrapper";
+import PostPreview from "../components/PostPreview";
 
-const TagPageTemplate = ({ pageContext, data }) => {
+const PostContainer = tw.div`max-w-screen-xl m-auto`;
+
+const TagPageTemplate = ({ data, pageContext }) => {
   const { tag } = pageContext;
   const { edges, totalCount } = data.allMarkdownRemark;
   return (
-    <div>
-      {tag} - {totalCount}
-    </div>
+    <>
+      <BlogHeader title={` Tags ; ${tag}`} />
+      <PostContainer>
+        {edges.map(({ node: { fields, frontmatter } }) => (
+          <ElementGapWrapper>
+            <PostPreview
+              title={frontmatter.title}
+              date={frontmatter.date}
+              to={fields.slug}
+            />
+          </ElementGapWrapper>
+        ))}
+      </PostContainer>
+    </>
   );
 };
 
