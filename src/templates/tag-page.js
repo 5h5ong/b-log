@@ -19,6 +19,7 @@ const TagPageTemplate = ({ data, pageContext }) => {
             <PostPreview
               title={frontmatter.title}
               date={frontmatter.date}
+              tags={frontmatter.tags}
               to={fields.slug}
             />
           </ElementGapWrapper>
@@ -46,6 +47,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
+            tags
           }
         }
       }

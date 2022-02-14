@@ -39,10 +39,10 @@ const IndexPage = ({ data }) => {
           const {
             fields: { slug },
           } = post;
-          const { title, date } = post.frontmatter;
+          const { title, date, tags } = post.frontmatter;
           return (
             <ElementGapWrapper>
-              <PostPreview title={title} date={date} to={slug} />
+              <PostPreview title={title} date={date} tags={tags} to={slug} />
             </ElementGapWrapper>
           );
         })}
@@ -58,6 +58,7 @@ export const pageQuery = graphql`
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
+          tags
         }
         id
         fields {

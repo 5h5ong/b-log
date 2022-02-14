@@ -5,6 +5,7 @@ import Seo from "../components/Seo";
 import BlogHeader from "../components/BlogHeader";
 import Toc from "../components/Toc";
 import Tag from "../components/Tag";
+import { GapHorizontality } from "../styles/gaps";
 
 const Container = styled.div`
   ${tw`my-40`};
@@ -24,8 +25,6 @@ const BlogTitle = tw.h1`
   mb-0
   text-6xl
 `;
-
-const GapHorizontality = tw.span`last:m-0 mr-2`;
 
 /**
  * Markdown Style
