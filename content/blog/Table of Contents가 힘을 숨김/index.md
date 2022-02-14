@@ -1,6 +1,7 @@
 ---
 title: Table of Contents가 힘을 숨김
 date: "2022-02-09"
+tags: ["guide"]
 ---
 
 # TMI
