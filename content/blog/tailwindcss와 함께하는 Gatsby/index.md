@@ -1,7 +1,7 @@
 ---
 title: tailwindcss와 함께하는 Gatsby
 date: "2022-02-07"
-tag: ["gatsby", "guide", "tailwindcss", "solution"]
+tags: ["gatsby", "guide", "tailwindcss", "solution"]
 ---
 
 # 선생님, 저는 CSS가 싫어요!
