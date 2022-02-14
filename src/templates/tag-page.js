@@ -9,7 +9,7 @@ const PostContainer = tw.div`max-w-screen-xl m-auto`;
 
 const TagPageTemplate = ({ data, pageContext }) => {
   const { tag } = pageContext;
-  const { edges, totalCount } = data.allMarkdownRemark;
+  const { edges } = data.allMarkdownRemark;
   return (
     <>
       <BlogHeader title={` Tags ; ${tag}`} />

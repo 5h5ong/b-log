@@ -10,9 +10,8 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "postbuild": "npm run clean",
     "build": "gatsby build --prefix-paths",
-    "deploy": "npm run build && gh-pages -d public -b gh-pages",
+    "deploy": "npm run clean && npm run build && gh-pages -d public -b gh-pages",
     "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean"
   },
