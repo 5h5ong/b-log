@@ -4,18 +4,11 @@ import tw from "twin.macro";
 import BlogHeader from "../components/BlogHeader";
 import ElementGapWrapper from "../components/ElementGapWrapper";
 import PostPreview from "../components/PostPreview";
-import Seo from "../components/Seo";
 
 const Main = tw.main`max-w-screen-lg m-auto`;
-const HeaderContainer = tw.div`mt-20 mb-32`;
 
 const Header = () => {
-  return (
-    <HeaderContainer>
-      <Seo title="Home Page" />
-      <BlogHeader title="It's b:LOG" />
-    </HeaderContainer>
-  );
+  return <BlogHeader title="It's b:Log" seo="Home Page" />;
 };
 
 // markup

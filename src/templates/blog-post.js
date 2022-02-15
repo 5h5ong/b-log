@@ -1,11 +1,10 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import tw, { styled } from "twin.macro";
-import Seo from "../components/Seo";
-import BlogHeader from "../components/BlogHeader";
 import Toc from "../components/Toc";
 import Tag from "../components/Tag";
 import { GapHorizontality } from "../styles/gaps";
+import BlogHeader from "../components/BlogHeader";
 
 const Container = styled.div`
   ${tw`my-40`};
@@ -21,7 +20,7 @@ const Header = tw.header`
   mb-28
 `;
 
-const BlogTitle = tw.h1`
+const PostTitle = tw.h1`
   mb-0
   text-6xl
 `;
@@ -111,11 +110,10 @@ const BlogPostTemplate = ({ data }) => {
 
   return (
     <>
-      <BlogHeader title="b:LOG" />
+      <BlogHeader title="b:LOG" seo={frontmatter.title} />
       <Container>
-        <Seo title={frontmatter.title} />
         <Header>
-          <BlogTitle>{frontmatter.title}</BlogTitle>
+          <PostTitle>{frontmatter.title}</PostTitle>
           <GapHorizontality>
             <span>{frontmatter.date}</span>
           </GapHorizontality>

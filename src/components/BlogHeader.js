@@ -1,21 +1,21 @@
 import React from "react";
 import tw from "twin.macro";
-import StyledLink from "./StyledLink";
+import Seo from "./Seo";
+import BlogTitle from "./BlogTitle";
 
-const Title = tw.h1`
-  flex
-  items-center
-  justify-center
-  text-5xl
-  font-mono
-  mb-16
-`;
+const HeaderContainer = tw.div`mt-20 mb-32`;
 
-const BlogHeader = ({ title }) => {
+/**
+ * 블로그의 헤더.
+ * @param title 헤더에 표시될 문자열
+ * @param seo Seo에 사용될 문자열
+ */
+const BlogHeader = ({ title, seo }) => {
   return (
-    <StyledLink to="/">
-      <Title>{title}</Title>
-    </StyledLink>
+    <HeaderContainer>
+      <Seo title={seo} />
+      <BlogTitle title={title} />
+    </HeaderContainer>
   );
 };
 
