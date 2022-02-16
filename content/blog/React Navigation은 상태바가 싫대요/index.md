@@ -1,6 +1,6 @@
 ---
 title: React Navigation은 상태바가 싫대요
-date: 2022-02-16
+date: 2022-02-16T13:00
 tags: ["expo", "solution"]
 ---
 
