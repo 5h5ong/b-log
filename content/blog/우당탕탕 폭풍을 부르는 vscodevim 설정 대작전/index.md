@@ -1,7 +1,7 @@
 ---
 title: 우당탕탕 폭풍을 부르는 vscodevim 설정 대작전
 date: 2022-02-09
-tags: ["vscodevim"]
+tags: ["vscodevim", "guide"]
 ---
 
 Visual Studio Code는 정말 완벽합니다! 단 하나를 빼고 말이죠. **기본으로 VIM을 지원하지 않아요!!**
