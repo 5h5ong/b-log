@@ -6,7 +6,7 @@ const Container = styled.div`
   ${tw`
   relative
   left-full
-  pl-28
+  pl-14
   `}
 
   ul {
@@ -34,7 +34,7 @@ const Container = styled.div`
 
 const Contents = styled.div`
   ${tw`
-  fixed w-80 rounded-3xl p-5 
+  fixed w-72 rounded-3xl p-5 
   `}
   box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
 `;
