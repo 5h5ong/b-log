@@ -29,6 +29,17 @@ const PostTitle = tw.h1`
  * Markdown Style
  */
 const Section = styled.section`
+  ul {
+    ${tw`pl-7 leading-8 list-none`}
+    li {
+      ${tw`before:content-['»'] before:mr-2 before:text-gray-400`}
+    }
+  }
+
+  ol {
+    ${tw`pl-7 leading-8`}
+  }
+
   p {
     ${tw`text-lg`}
   }
