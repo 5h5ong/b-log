@@ -6,7 +6,7 @@ const Container = styled.div`
   ${tw`
   relative
   left-full
-  pl-14
+  pl-16
   `}
 
   ul {
@@ -36,13 +36,16 @@ const Contents = styled.div`
   ${tw`
   fixed w-72 rounded-3xl p-5 
   `}
+  /* toc의 위치를 상단으로 */
+  ${(props) => props.setTop && tw`top-10`}
+
   box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
 `;
 
-const Toc = ({ html }) => {
+const Toc = ({ html, setTop }) => {
   return (
     <Container>
-      <Contents dangerouslySetInnerHTML={{ __html: html }} />
+      <Contents dangerouslySetInnerHTML={{ __html: html }} setTop={setTop} />
     </Container>
   );
 };

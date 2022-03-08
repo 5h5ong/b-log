@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useEffect, useState } from "react";
 import { graphql } from "gatsby";
 import tw, { styled } from "twin.macro";
 import Toc from "../components/Toc";
@@ -116,11 +117,24 @@ const Section = styled.section`
 `;
 
 const BlogPostTemplate = ({ data }) => {
+  /** 스크롤 위치 */
+  const [scroll, setScroll] = useState(0);
   const { markdownRemark } = data;
   const { frontmatter, html, tableOfContents } = markdownRemark;
 
+  /** 스크롤 위치 갱신 */
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.onscroll = () => {
+        const { scrollTop } = document.documentElement;
+        setScroll(scrollTop);
+      };
+    }
+  }, []);
+
   return (
     <>
+      {/* <div style={{ position: "fixed" }}>scroll: {scroll}</div> */}
       <BlogHeader title="b:LOG" seo={frontmatter.title} />
       <Container>
         <Header>
@@ -135,7 +149,7 @@ const BlogPostTemplate = ({ data }) => {
           ))}
         </Header>
         <SectionContainer>
-          <Toc html={tableOfContents} />
+          <Toc html={tableOfContents} setTop={scroll >= 350 ? true : false} />
           <Section dangerouslySetInnerHTML={{ __html: html }} />
         </SectionContainer>
       </Container>
