@@ -7,6 +7,7 @@ const Container = styled.div`
   relative
   left-full
   pl-16
+  leading-9
   `}
 
   ul {
@@ -17,11 +18,11 @@ const Container = styled.div`
   }
 
   li {
-    ${tw`first:m-0 mt-3`}
+    ${tw`m-0 truncate`}
   }
 
   p {
-    ${tw`truncate`}
+    ${tw`m-0 truncate`}
   }
 
   a {
