@@ -61,6 +61,10 @@ const Section = styled.section`
     ${tw`p-3 text-gray-600 text-sm`}
   }
 
+  blockquote {
+    ${tw`mx-4 pl-2 border-0 border-l-4 border-solid border-gray-400`}
+  }
+
   /* Image Caption etc) alt, title... [alt](./...png "title") */
   .gatsby-resp-image-figcaption {
     ${tw`flex justify-center mt-2 text-sm text-gray-500`}
