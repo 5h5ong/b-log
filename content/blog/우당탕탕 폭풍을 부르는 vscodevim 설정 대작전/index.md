@@ -4,6 +4,8 @@ date: 2022-02-09
 tags: ["vscodevim", "guide"]
 ---
 
+> ✍️ **추가** 2022-03-15 : 한/영 전환
+
 Visual Studio Code는 정말 완벽합니다! 단 하나를 빼고 말이죠. **기본으로 VIM을 지원하지 않아요!!**
 
 엄청난 단점이 아닐 수 없습니다. 조금 움직일 때마다 마우스에 손을 대라니, 키보드에 대한 모욕이에요!
@@ -132,3 +134,71 @@ vscodevim는 윈도우와 관련한 키 스트로크를 제공하지 않아 직�
 | ctrl + l |              오른쪽 윈도우로 이동               |
 
 저를 전적으로 믿으셔야 합니다. 이 것만 있으면 다 해먹을 수 있어요!
+
+## 한/영 전환
+
+> 🔭 **Documentation** https://github.com/VSCodeVim/Vim#input-method
+
+> 🔭 **im-select** https://github.com/daipeihust/im-select
+
+vscodevim은 영어 입력으로 작동되게 만들어졌습니다. 그래서 한글로 뿌듯한 주석을 작성 후 insert mode로 돌아가면 키가 먹히지 않게 되는겁니다.
+`w`는 `ㅈ`가 아니니까요.
+
+물론 vscodevim은 이 것에 대한 해결 방법을 만들어놨습니다. mode가 바뀌면 입력 소스를 지정해놓은 걸로 바꾸는 겁니다. 이를테면 영어라든지요!
+
+### im-select
+
+입력 소스를 바꿔줍니다. 꼭 설치해야 합니다.
+
+```shell
+brew tap daipeihust/tap
+
+brew install im-select
+```
+
+맥은 brew로 간단히 설치가 가능합니다.
+
+```shell
+scoop bucket add im-select https://github.com/daipeihust/im-select
+scoop install im-select
+```
+
+윈도우는 scoop으로 설치가 가능합니다.
+
+### 설정
+
+```json
+// Mac OS
+{
+  ...
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
+  "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
+                                                                      ^
+                                                                  defaultIM
+}
+```
+
+```json
+// Windows
+{
+  ...
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.defaultIM": "1033",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\bin\\im-select.exe",
+  "vim.autoSwitchInputMethod.switchIMCmd": "C:\\bin\\im-select.exe {im}"
+                                                                    ^
+                                                                defaultIM
+}
+```
+
+- defaultIM
+  - mode 변경 시 기본으로 바뀔 입력 소스
+  - 운영체제, 입력기에 따라 달라질 수 있음
+- obtainIMCmd
+  - im-select의 경로
+- switchIMCmd
+  - defaultIM이 넣어질 곳을 지정
+
+설정은 다음과 같습니다. `settings.json`에 적어주세요.
