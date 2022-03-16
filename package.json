@@ -10,8 +10,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build --prefix-paths",
-    "deploy": "npm run clean && npm run build && gh-pages -d public -b gh-pages",
+    "build": "gatsby build",
     "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean"
   },
@@ -36,7 +35,6 @@
     "tailwindcss": "^3.0.18"
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3",
     "twin.macro": "^2.8.2"
   },
   "babelMacros": {
