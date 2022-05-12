@@ -1,5 +1,7 @@
+const pathPrefix = process.env.NODE_ENV === "production" ? "/b-log" : "/";
+
 module.exports = {
-  pathPrefix: process.env.NODE_ENV === "production" ? "/b-log" : "/",
+  pathPrefix: pathPrefix,
   // pathPrefix: "/b-log",
   siteMetadata: {
     title: `bLOG`,
@@ -103,6 +105,32 @@ module.exports = {
             title: "b:Log Rss Feed",
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        query: `
+        {
+          allSitePage {
+            edges {
+              node {
+                path
+              }
+            }
+          }
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+        }`,
+        resolvePages: ({ allSitePage: { edges } }) => {
+          return edges.map(({ node: { path } }) => ({ path: path }));
+        },
+        serialize: ({ path }) => ({
+          url: `${pathPrefix}${path}`,
+        }),
       },
     },
     `gatsby-plugin-styled-components`,
