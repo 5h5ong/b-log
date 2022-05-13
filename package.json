@@ -10,7 +10,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "npm run clean && gatsby build --verbose",
+    "build": "gatsby build",
     "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean"
   },
