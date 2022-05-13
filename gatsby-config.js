@@ -129,7 +129,7 @@ module.exports = {
           return edges.map(({ node: { path } }) => ({ path: path }));
         },
         serialize: ({ path }) => ({
-          url: `${pathPrefix}${path}`,
+          url: `${path}`,
         }),
       },
     },
