@@ -35,7 +35,8 @@ const Container = styled.div`
 
 const Contents = styled.div`
   ${tw`
-  fixed w-72 rounded-3xl p-5 
+  fixed w-72 h-96 rounded-3xl p-5 
+  overflow-y-auto
   `}
   /* toc의 위치를 상단으로 */
   ${(props) => props.setTop && tw`top-10`}
