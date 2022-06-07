@@ -483,9 +483,9 @@ Nginx가 등장할 차례입니다. Nginx는 리버스 프록시 기능을 제�
 
 사실 블루-그린 방식의 개념은 굉장히 쉽습니다. 원래 돌아가는 건 가만히 놔두고 다른 곳에 배포한 다음에 바꿔치기하면 완전 무중단 배포 아니에요? 맞습니다. 그게 무중단 배포죠!
 그러나 언제나 그렇듯이 실제 구현으로 가는 길은 과속 방지턱이 잔뜩 박혀있습니다. 글로 정리하면 이렇게 짧은 과정인데 실제는 시간이 꽤 걸렸습니다.
-한 번은 실마리가 보여서 엑셀을 잔뜩 밟은 적도 있는데 과속 방지턱이 역시 무섭긴 무섭습니다.
+한 번은 실마리가 보여서 엑셀을 잔뜩 밟은 적도 있는데 꽤 혼났습니다. 역시 과속 방지턱이 역시 무섭긴 무섭습니다.
 
-Health Check에 대한 것도 말하지 않을 수 없습니다. Nginx Open Source는 Passive Health Check만 지원합니다. 외부에서 요청이 들어왔을 때만 Health Check가 가능하죠. 일정 주기로 확인해주는 Active Health Check는 Nginx Plus에서만 제공됩니다.
+Health Check에 대한 것도 말하지 않을 수 없네요. Nginx Open Source는 Passive Health Check만 지원합니다. 외부에서 요청이 들어왔을 때만 Health Check가 가능하죠. 일정 주기로 확인해주는 Active Health Check는 Nginx Plus에서만 제공됩니다.
 Active Health Check에 대해 진지하게 생각하고 있다면 Nginx Plus를 결제하거나 처음부터 해당 기능을 지원하는 HAProxy를 찾아보세요.
 
 그렇습니다. 생각보다 말이 길어졌네요. 이 글이 여러분들에게 도움이 됐으면 좋겠습니다. 그럼 이만!
