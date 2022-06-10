@@ -113,7 +113,7 @@ curl -SL https://github.com/docker/compose/releases/download/v2.5.0/docker-compo
 
 ### 설명
 
-이 글에서는 블루-그린 방식을 통해 무중단 배포를 구현하려고 합니다. 이를 위해서 필요한 게 docker-compose 입니다.
+이 글에서는 블루-그린 방식을 통해 무중단 배포를 구현하려고 합니다. 이 때 필요한 게 docker-compose 입니다.
 
 ```yml
 # docker-compose-blue.yml
@@ -206,7 +206,7 @@ jobs:
 
       # 업로드 한 zip을 토대로 CodeDeploy에서 새로운 배포를 만들게 함
       - name: Create new Deployment
-        run: aws deploy create-deployment --application-name deploy-test --deployment-config-name CodeDeployDefault.AllAtOnce --deployment-group-name deploy-group --s3-location bucket=only-deploy-test-bucket,bundleType=zip,key=$GITHUB_REPOSITORY/$GITHUB_SHA.zip
+        run: aws deploy create-deployment --application-name $DEPLOYMENT_APP_NAME --deployment-config-name CodeDeployDefault.AllAtOnce --deployment-group-name $DEPLOY_GROUP_NAME --s3-location bucket=$S3_BUCKET_NAME,bundleType=zip,key=$GITHUB_REPOSITORY/$GITHUB_SHA.zip
 ```
 
 ![](2022-06-05-21-06-10.png)
@@ -479,7 +479,7 @@ Nginx가 등장할 차례입니다. Nginx는 리버스 프록시 기능을 제�
 
 > 🔭 **Reference** https://docs.nginx.com/nginx/admin-guide/load-balancer/http-health-check/
 
-드디어 무중단 배포의 대단원이 마무리됐습니다. 사실 삽질을 좀 많이 했습니다. 처음엔 S3에 코드를 업로드하지 않고 Github Actions에서 도커 이미지를 빌드한 다음에 도커 저장소에 푸시하고 배포 때 가져오는 걸 생각했었습니다. 그런 와중에 도전해보는 김에 싹 다 훑어보려고 S3에 업로드하는 방향으로 틀었는데 꽤 만족스럽네요. 몇 번 배포를 돌려보면서 S3에 zip이 좀 쌓였는데 그거 둘러보는 재미가 쏠쏠합니다.
+사실 삽질을 좀 많이 했습니다. 처음엔 S3에 코드를 업로드하지 않고 Github Actions에서 도커 이미지를 빌드한 다음에 도커 저장소에 푸시하고 배포 때 가져오는 걸 생각했었습니다. 그런 와중에 도전해보는 김에 싹 다 훑어보려고 S3에 업로드하는 방향으로 틀었는데 꽤 만족스럽네요. 몇 번 배포를 돌려보면서 S3에 zip이 좀 쌓였는데 그거 둘러보는 재미가 쏠쏠합니다.
 
 사실 블루-그린 방식의 개념은 굉장히 쉽습니다. 원래 돌아가는 건 가만히 놔두고 다른 곳에 배포한 다음에 바꿔치기하면 완전 무중단 배포 아니에요? 맞습니다. 그게 무중단 배포죠!
 그러나 언제나 그렇듯이 실제 구현으로 가는 길은 과속 방지턱이 잔뜩 박혀있습니다. 글로 정리하면 생각보다 짧은 과정인데 실제는 시간이 꽤 걸린 것 처럼요.
@@ -489,8 +489,3 @@ Health Check에 대한 것도 말하지 않을 수 없네요. Nginx Open Source�
 Active Health Check에 대해 진지하게 생각하고 있다면 Nginx Plus를 결제하거나 처음부터 해당 기능을 지원하는 HAProxy를 찾아보세요.
 
 그렇습니다. 생각보다 말이 길어졌네요. 이 글이 여러분들에게 도움이 됐으면 좋겠습니다. 그럼 이만!
-
-
-
-
-
