@@ -1,0 +1,484 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta data-react-helmet="true" name="google-site-verification" content="hXzBIUorkHEVsO9Jb_mIDuDqsTRSzyOx9rvhZ3GrZj8"/><meta name="generator" content="Gatsby 4.6.2"/><style data-href="/b-log/styles.b776309b4decf2925be2.css" data-identity="gatsby-global-css">code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#f8f8f2;font-family:Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{border-radius:.3em;margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2e3440}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#636f88}.token.punctuation{color:#81a1c1}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#81a1c1}.token.number{color:#b48ead}.token.boolean{color:#81a1c1}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a3be8c}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#81a1c1}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#88c0d0}.token.keyword{color:#81a1c1}.token.important,.token.regex{color:#ebcb8b}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="alternate" type="application/rss+xml" title="b:Log Rss Feed" href="/b-log/rss.xml"/><link rel="sitemap" type="application/xml" href="/b-log/sitemap/sitemap-index.xml"/><style data-styled="" data-styled-version="5.3.3">.nvvNn{position:relative;left:100%;padding-left:4rem;line-height:2.25rem;}/*!sc*/
+.nvvNn ul{list-style-type:none;padding-left:1rem;}/*!sc*/
+.nvvNn li{margin:0px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}/*!sc*/
+.nvvNn p{margin:0px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}/*!sc*/
+.nvvNn a{--tw-text-opacity:1;color:rgba(75,85,99,var(--tw-text-opacity));font-size:0.875rem;line-height:1.25rem;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+.nvvNn a:hover{--tw-text-opacity:1;color:rgba(17,24,39,var(--tw-text-opacity));}/*!sc*/
+data-styled.g1[id="Toc__Container-sc-9zrjd9-0"]{content:"nvvNn,"}/*!sc*/
+.dmEqLl{position:fixed;width:18rem;height:50%;border-radius:1.5rem;padding:1.25rem;overflow-y:auto;box-shadow:20px 20px 60px #d9d9d9,-20px -20px 60px #ffffff;}/*!sc*/
+data-styled.g2[id="Toc__Contents-sc-9zrjd9-1"]{content:"dmEqLl,"}/*!sc*/
+.jQTdsB{--tw-text-opacity:1;color:rgba(0,0,0,var(--tw-text-opacity));-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+.jQTdsB:hover{--tw-text-opacity:1;color:rgba(75,85,99,var(--tw-text-opacity));}/*!sc*/
+data-styled.g3[id="StyledLink-sc-3uouk6-0"]{content:"jQTdsB,"}/*!sc*/
+.rWuXm{font-size:0.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgba(156,163,175,var(--tw-text-opacity));}/*!sc*/
+data-styled.g4[id="Tag__TagStyledLink-sc-1hcx1ww-0"]{content:"rWuXm,"}/*!sc*/
+.gOnOul{margin-right:0.5rem;}/*!sc*/
+.gOnOul:last-child{margin:0px;}/*!sc*/
+data-styled.g5[id="gaps__GapHorizontality-sc-1ekq037-0"]{content:"gOnOul,"}/*!sc*/
+.kyIceB{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:3rem;line-height:1;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;margin-bottom:4rem;}/*!sc*/
+data-styled.g6[id="BlogTitle__StyledH1-sc-15e6xzu-0"]{content:"kyIceB,"}/*!sc*/
+.evzjD{margin-top:5rem;margin-bottom:8rem;}/*!sc*/
+data-styled.g7[id="BlogHeader__HeaderContainer-sc-svto0z-0"]{content:"evzjD,"}/*!sc*/
+.AYgxb{margin-top:10rem;margin-bottom:10rem;}/*!sc*/
+data-styled.g8[id="blog-post__Container-sc-bktxku-0"]{content:"AYgxb,"}/*!sc*/
+.bWWXUD{max-width:768px;margin:auto;}/*!sc*/
+data-styled.g9[id="blog-post__SectionContainer-sc-bktxku-1"]{content:"bWWXUD,"}/*!sc*/
+.dgABOP{max-width:1024px;margin:auto;margin-bottom:7rem;}/*!sc*/
+data-styled.g10[id="blog-post__Header-sc-bktxku-2"]{content:"dgABOP,"}/*!sc*/
+.kmNTJS{margin-bottom:0px;font-size:3.75rem;line-height:1;}/*!sc*/
+data-styled.g11[id="blog-post__PostTitle-sc-bktxku-3"]{content:"kmNTJS,"}/*!sc*/
+.ktKOFE ul{padding-left:1.75rem;line-height:2rem;list-style-type:none;}/*!sc*/
+.ktKOFE ul li:before{content:'»';margin-right:0.5rem;--tw-text-opacity:1;color:rgba(156,163,175,var(--tw-text-opacity));}/*!sc*/
+.ktKOFE ol{padding-left:1.75rem;line-height:2rem;}/*!sc*/
+.ktKOFE p{font-size:1.125rem;line-height:1.75rem;}/*!sc*/
+.ktKOFE code{font-size:0.875rem;line-height:1.25rem;}/*!sc*/
+.ktKOFE table{table-layout:auto;padding:1.25rem;border-radius:0.75rem;margin:auto;border-width:1px;--tw-border-opacity:1;border-color:rgba(156,163,175,var(--tw-border-opacity));border-style:solid;}/*!sc*/
+.ktKOFE th{padding-bottom:1rem;border-width:0px;border-bottom-width:1px;--tw-border-opacity:1;border-color:rgba(229,231,235,var(--tw-border-opacity));border-style:solid;}/*!sc*/
+.ktKOFE td{padding:0.75rem;--tw-text-opacity:1;color:rgba(75,85,99,var(--tw-text-opacity));font-size:0.875rem;line-height:1.25rem;}/*!sc*/
+.ktKOFE blockquote{margin-left:1rem;margin-right:1rem;padding-left:0.5rem;border-width:0px;border-left-width:4px;border-style:solid;--tw-border-opacity:1;border-color:rgba(156,163,175,var(--tw-border-opacity));}/*!sc*/
+.ktKOFE .gatsby-resp-image-figcaption{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-top:0.5rem;font-size:0.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgba(107,114,128,var(--tw-text-opacity));}/*!sc*/
+.ktKOFE h1{font-size:3rem;line-height:1;}/*!sc*/
+.ktKOFE h1:before{content:'#';--tw-text-opacity:1;color:rgba(209,213,219,var(--tw-text-opacity));margin-left:-1.6rem;}/*!sc*/
+.ktKOFE h2{font-size:2.25rem;line-height:2.5rem;}/*!sc*/
+.ktKOFE h2:before{content:'##';--tw-text-opacity:1;color:rgba(209,213,219,var(--tw-text-opacity));margin-left:-2.4rem;}/*!sc*/
+.ktKOFE h3{font-size:1.875rem;line-height:2.25rem;}/*!sc*/
+.ktKOFE h3:before{content:'###';--tw-text-opacity:1;color:rgba(209,213,219,var(--tw-text-opacity));margin-left:-3rem;}/*!sc*/
+.ktKOFE h4{font-size:1.5rem;line-height:2rem;}/*!sc*/
+.ktKOFE h4:before{content:'####';--tw-text-opacity:1;color:rgba(209,213,219,var(--tw-text-opacity));margin-left:-3.1rem;}/*!sc*/
+.ktKOFE h5{font-size:1.25rem;line-height:1.75rem;}/*!sc*/
+.ktKOFE h5:before{content:'#####';--tw-text-opacity:1;color:rgba(209,213,219,var(--tw-text-opacity));margin-left:-3.3rem;}/*!sc*/
+.ktKOFE h6{font-size:1.125rem;line-height:1.75rem;}/*!sc*/
+.ktKOFE h6:before{content:'######';--tw-text-opacity:1;color:rgba(209,213,219,var(--tw-text-opacity));margin-left:-3.5rem;}/*!sc*/
+data-styled.g12[id="blog-post__Section-sc-bktxku-4"]{content:"ktKOFE,"}/*!sc*/
+</style><title data-react-helmet="true">b:Log | Table of Contents가 힘을 숨김</title><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/b-log/webpack-runtime-76465a399045a41f636f.js"/><link as="script" rel="preload" href="/b-log/framework-2c67c8bfa55bfd760b60.js"/><link as="script" rel="preload" href="/b-log/app-423680434a9201db7ee2.js"/><link as="script" rel="preload" href="/b-log/8c818aafd19f020a43cdd28cb6a1c8df7d18c0d2-0fdccc7611a7c55272d7.js"/><link as="script" rel="preload" href="/b-log/component---src-templates-blog-post-js-549bf8357642c940d19b.js"/><link as="fetch" rel="preload" href="/b-log/page-data/Table of Contents가 힘을 숨김/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/b-log/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="BlogHeader__HeaderContainer-sc-svto0z-0 evzjD"><a class="StyledLink-sc-3uouk6-0 jQTdsB" href="/b-log/"><h1 class="BlogTitle__StyledH1-sc-15e6xzu-0 kyIceB">b:LOG</h1></a></div><div class="blog-post__Container-sc-bktxku-0 AYgxb"><header class="blog-post__Header-sc-bktxku-2 dgABOP"><h1 class="blog-post__PostTitle-sc-bktxku-3 kmNTJS">Table of Contents가 힘을 숨김</h1><span class="gaps__GapHorizontality-sc-1ekq037-0 gOnOul"><span>February 09, 2022</span></span><span class="gaps__GapHorizontality-sc-1ekq037-0 gOnOul"><a class="StyledLink-sc-3uouk6-0 Tag__TagStyledLink-sc-1hcx1ww-0 jQTdsB rWuXm" href="/b-log/tags/guide">#<!-- -->guide</a></span></header><div class="blog-post__SectionContainer-sc-bktxku-1 bWWXUD"><div class="Toc__Container-sc-9zrjd9-0 nvvNn"><div class="Toc__Contents-sc-9zrjd9-1 dmEqLl"><ul>
+<li>
+<p><a href="#tmi">TMI</a></p>
+</li>
+<li>
+<p><a href="#table-of-contents%EB%8A%94-%EC%96%B4%EB%94%94%EC%97%90-%EC%9E%88%EC%9D%84%EA%B9%8C%EC%9A%94">Table of Contents는 어디에 있을까요?</a></p>
+</li>
+<li>
+<p><a href="#%EB%84%A3%EC%96%B4%EB%B4%85%EC%8B%9C%EB%8B%A4">넣어봅시다</a></p>
+</li>
+<li>
+<p><a href="#%EC%A7%80%EA%B8%88-%EB%88%8C%EB%9F%AC%EC%84%9C-%EC%9D%B4%EB%8F%99">지금 눌러서 이동</a></p>
+</li>
+<li>
+<p><a href="#%EB%8D%94-%EB%A9%8B%EC%A7%80%EA%B2%8C">더 멋지게</a></p>
+<ul>
+<li>
+<p><a href="#%ED%95%AD%EC%83%81-%EB%94%B0%EB%9D%BC%EB%8B%A4%EB%8B%88%EA%B2%8C">항상 따라다니게</a></p>
+</li>
+<li>
+<p><a href="#%EC%96%B4%EC%9A%B8%EB%A0%A4-%EB%B3%B4%EC%9D%B4%EA%B2%8C">어울려 보이게</a></p>
+<ul>
+<li>
+<p><a href="#%EC%9E%A0%EA%B9%90%EB%A7%8C">잠깐만!</a></p>
+</li>
+<li>
+<p><a href="#%EC%84%A4%EB%AA%85">설명!</a></p>
+<ul>
+<li><a href="#1-%EC%95%BC%EC%8B%9C%EA%BE%B8%EB%A6%AC%ED%95%9C-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%82%AC%EC%9D%B4%EC%9D%98-%EA%B0%84%EA%B2%A9-%EC%A1%B0%EC%A0%95%ED%95%98%EA%B8%B0">1. 야시꾸리한 텍스트 사이의 간격 조정하기</a></li>
+<li><a href="#2-a-tag">2. a tag</a></li>
+<li><a href="#3-box-shadow">3. box shadow</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#%EB%A7%88%EB%AC%B4%EB%A6%AC">마무리</a></p>
+</li>
+</ul></div></div><section class="blog-post__Section-sc-bktxku-4 ktKOFE"><h1 id="tmi" style="position:relative;"><a href="#tmi" aria-label="tmi permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>TMI</h1>
+<p>Notion에서도 그렇고, 블로그에서도 그렇고 글을 쓰는 게 만족스럽지 않았습니다. 한 눈에 글의 구조를 파악할 수 없었거든요.
+사실 Notion도 Table of Contents를 지원하기는 해요! 하지만 글 어딘가에 넣어주는 방식으로만 사용이 가능합니다.</p>
+<p>저는 글을 읽을 때도 따라다니며 한 눈에 글의 구조를 파악할 수 있는 Table of Contents를 원했습니다.
+혹시 옛날 데스크탑으로 보던 네이버 웹툰 기억하나요? 그 오른쪽에 항상 따라다니는 작은 리모컨처럼 말이죠!</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 236px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/b-log/static/b2bd30db1de53a12f567df37d211bc5c/a7bcd/2022-02-09-11-19-41.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 160.8108108108108%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgCAYAAAASYli2AAAACXBIWXMAABYlAAAWJQFJUiTwAAADVUlEQVRIx62Wa08aURCG97/7I0zbT8bEmBiJFrGm5YvGCvGaKBjvUfEGRfEGygJO8wy864pLa9KeZPbsmZ2ZM/OemTkbPDw82OPjYyI1Gg17fn62p6cnp2az6XNcpl6vR3R3d2cBLyj2E4rX19d2fn5uFxcXTkdHR3Z1deWbSAaHuvRo9/f3FvB4ZXYJHkrZbNZGRkZscjJlqVTKxsfHbXFx0Q0hg9HLy0v7/iPrG7nB29tbd7Wf+Hh8fGzr6+u2trZmhULR8vm87e/ve6josXm5XLG9vT2rVH5ZrVazoFqtemhJJMPaBIWbm5s3Mqz5xlypVCwQ4EkUB5zwNPfLxfEM7D+OVqtlwcvLiyURg5MlDEIlLAE/SJ60euchHzudjr9nMhlLp9M2OjpqU1NTNjY2ZnNzc5GcDGkOwzDZoASWl5dtYWHBSqWSnZ6e2ubmpp/6Hw0OCllCSWOQbKKH/zLcIHipbpUq8VqOl5dSZ1A6+aHwQLgZhj5TcpQTfIQ4VYzzTQ0iLgMv7OliOOAj+fPz55J9Tc9Yu932VGHkcnkrlc7spdNxGdIHQwxkkN3Z2YmMs7EbhGq1W+8sCJXLZVeqVq+djzF5gyyHQE4CFxHE21qAAZK2K9zFi7pEUGWFZ5BwQ4a1cIYEl58yRsGBWWmgdX+64C2KeIcMxMZaByqZbisqOx54CE/C8gxjeENEyIEjMKnrR4mNdYzRRIeHh216etqVCXtjY8NLkLKjHzIwODEx4fyhoSFvY3jtaYNBpQgNFWJ34YcXW1tbfppsiiLeFAoF57G58H0TMos4VsKpf0R528tHFQbv70ovqYY/Wt9R6XGSHyEwTeKFrZbPeApMgbCKX59JVyq76/oUETaGdRX4FdDsVYpOiftVFSECcNKDm05VwcyBcVeD4ZvSkwEUZzKzdnh4aO1ezsFn58zsNyudnXl49XrDQ1xaytmnz1/89OG7hzLoeIRhVE6s5YkwUkUJAur8opdiSqeoOeDV9nbRZ3KRCx0lchKe6ODgIMpPZHZ3d+3k5OTVQ3lRLBb9DuEvgXl1ddX5CLNeWVnx3xBmoOFGzOVyNj8/73dNZFBJzQLQ1YYUhqpInVx8dOApK5DzBqtfDf006T3+C6L13/g0ld/+i47P+ba+KQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="너로 정했다!"
+        title="너로 정했다!"
+        src="/b-log/static/b2bd30db1de53a12f567df37d211bc5c/a7bcd/2022-02-09-11-19-41.png"
+        srcset="/b-log/static/b2bd30db1de53a12f567df37d211bc5c/12f09/2022-02-09-11-19-41.png 148w,
+/b-log/static/b2bd30db1de53a12f567df37d211bc5c/a7bcd/2022-02-09-11-19-41.png 236w"
+        sizes="(max-width: 236px) 100vw, 236px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">너로 정했다!</figcaption>
+  </figure></p>
+<p>마침 Gatsby로 블로그를 만들어서 마음대로 건드릴 수 있겠다, 꿈의 Table of Contents를 만들기로 했습니다!</p>
+<h1 id="table-of-contents는-어디에-있을까요" style="position:relative;"><a href="#table-of-contents%EB%8A%94-%EC%96%B4%EB%94%94%EC%97%90-%EC%9E%88%EC%9D%84%EA%B9%8C%EC%9A%94" aria-label="table of contents는 어디에 있을까요 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Table of Contents는 어디에 있을까요?</h1>
+<p><a href="https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/">gatsby-transformer-remark</a></p>
+<p>Markdown heading들을 어떻게 가져오나.. 걱정하던 시절이 저에게도 있었습니다. 근데 이게 그냥 있더라구요!</p>
+<div class="gatsby-highlight" data-language="graphql"><pre style="counter-reset: linenumber NaN" class="language-graphql line-numbers"><code class="language-graphql"><span class="token object">allMarkdownRemark</span> <span class="token punctuation">{</span>
+  <span class="token property">id</span>
+  <span class="token property">html</span>
+  <span class="token property">tableOfContents</span>
+  <span class="token object">frontmatter</span> <span class="token punctuation">{</span>
+    <span class="token property">title</span>
+    <span class="token property-query">date</span><span class="token punctuation">(</span><span class="token attr-name">formatString</span><span class="token punctuation">:</span> <span class="token string">"MMMM DD, YYYY"</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p><code>tableOfContents</code>가 보이시나요? 맞습니다. <code>gatsby-transformer-remark</code> 자체에서 지원합니다!</p>
+<p>무려 html까지 직접 만들어서 전해줍니다. 우리가 할 건 이 html을 사용할 엘리먼트에 넣어주는 것 밖에 없습니다. 와...</p>
+<h1 id="넣어봅시다" style="position:relative;"><a href="#%EB%84%A3%EC%96%B4%EB%B4%85%EC%8B%9C%EB%8B%A4" aria-label="넣어봅시다 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>넣어봅시다</h1>
+<p>정말 간단합니다. 처음 마크다운을 템플릿 페이지에 넣어 줬던 것처럼 하면 됩니다.</p>
+<div class="gatsby-highlight" data-language="jsx"><pre style="counter-reset: linenumber NaN" class="language-jsx line-numbers"><code class="language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">dangerouslySetInnerHTML</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token literal-property property">__html</span><span class="token operator">:</span> html <span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<p>끝입니다! 표시된 Table of Contents를 보세요! 멋지지 않나요?</p>
+<h1 id="지금-눌러서-이동" style="position:relative;"><a href="#%EC%A7%80%EA%B8%88-%EB%88%8C%EB%9F%AC%EC%84%9C-%EC%9D%B4%EB%8F%99" aria-label="지금 눌러서 이동 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>지금 눌러서 이동</h1>
+<p>그 다음은 Table of Contents에서 원하는 heading으로 바로 이동할 수 있게 하는 기능을 구현할 거에요.
+이 것도 정말 간단합니다.</p>
+<div class="gatsby-highlight" data-language="shell"><pre style="counter-reset: linenumber NaN" class="language-shell line-numbers"><code class="language-shell"><span class="token function">npm</span> <span class="token function">install</span> gatsby-remark-autolink-headers</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="js"><pre style="counter-reset: linenumber NaN" class="language-js line-numbers"><code class="language-js"><span class="token comment">// gatsby.config.js</span>
+<span class="token punctuation">{</span>
+  <span class="token literal-property property">resolve</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">gatsby-transformer-remark</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+  <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">resolve</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">gatsby-remark-prismjs</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+        <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token operator">...</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">gatsby-remark-autolink-headers</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p><code>gatsby-remark-autolink-headers</code>를 설치한 다음 <code>gatsby.config.js</code>의 <code>gatsby-transformer-remark</code> 안에 넣어주세요.</p>
+<p>url을 통해 원하는 heading으로 갈 수 있게 해주는 플러그인 입니다.</p>
+<p>설치가 끝난 후 Table of Contents의 특정 heading을 눌러보세요. 바로 그 heading으로 날라갑니다!</p>
+<h1 id="더-멋지게" style="position:relative;"><a href="#%EB%8D%94-%EB%A9%8B%EC%A7%80%EA%B2%8C" aria-label="더 멋지게 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>더 멋지게</h1>
+<p>이제 핵심 기능은 전부 만들었습니다.</p>
+<p>근데요, 좀 그렇죠? 생김새가 그다지 멋지지 않아요! 남자로서 용납할 수 없는 부분이죠? 그래서 좀 더 멋지게 만들어 볼 겁니다.</p>
+<h2 id="항상-따라다니게" style="position:relative;"><a href="#%ED%95%AD%EC%83%81-%EB%94%B0%EB%9D%BC%EB%8B%A4%EB%8B%88%EA%B2%8C" aria-label="항상 따라다니게 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>항상 따라다니게</h2>
+<p>먼저 글의 오른쪽에서 항상 따라다니도록 만들거에요.</p>
+<div class="gatsby-highlight" data-language="jsx"><pre style="counter-reset: linenumber NaN" class="language-jsx line-numbers"><code class="language-jsx"><span class="token keyword">const</span> Container <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>tw<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  relative
+  left-full
+  pl-28
+  </span><span class="token template-punctuation string">`</span></span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> Contents <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>tw<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  fixed w-80
+  </span><span class="token template-punctuation string">`</span></span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="jsx"><pre style="counter-reset: linenumber NaN" class="language-jsx line-numbers"><code class="language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Container</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Contents</span></span> <span class="token attr-name">dangerouslySetInnerHTML</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token literal-property property">__html</span><span class="token operator">:</span> html <span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Container</span></span><span class="token punctuation">></span></span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<p>relative를 사용해 <code>left: 100%</code>으로 글이 담긴 엘리먼트의 바로 오른쪽에 위치하게 만들어 줍니다.</p>
+<p>그 다음, Table of Contents가 담긴 엘리먼트에 fixed를 줘 스크롤에 상관 없이 페이지에 보이게 만들어 줍니다.
+거기에 왼쪽 마진을 줘서 글과 살짝 떨어뜨려 줍니다.</p>
+<div class="gatsby-highlight" data-language="jsx"><pre style="counter-reset: linenumber NaN" class="language-jsx line-numbers"><code class="language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SectionContainer</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+  </span><span class="token punctuation">{</span><span class="token comment">/* Table Of Contents */</span><span class="token punctuation">}</span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Toc</span></span> <span class="token attr-name">html</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>tableOfContents<span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Section</span></span> <span class="token attr-name">dangerouslySetInnerHTML</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token literal-property property">__html</span><span class="token operator">:</span> html <span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">SectionContainer</span></span><span class="token punctuation">></span></span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>이제 만들어진 Table of Contents를 글이 담긴 곳의 같은 위치에 둘 거에요. relative는 parent에 맞춰지기 때문입니다.
+만약 다른 곳에 Table of Contents 컴포넌트를 둔다면 어디에 있는지 보이지도 않는 대참사가 일어날 수 있어요.
+꼭, Table of Contents가 따라다닐 컴포넌트와 같은 위치에 두세요.</p>
+<p>자, 이제 원하는 글에 들어가 보세요. 옆에서 따라다니는 게 보이시나요?</p>
+<h2 id="어울려-보이게" style="position:relative;"><a href="#%EC%96%B4%EC%9A%B8%EB%A0%A4-%EB%B3%B4%EC%9D%B4%EA%B2%8C" aria-label="어울려 보이게 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>어울려 보이게</h2>
+<p>그래도 솔직히 구리죠? 너무 옛날 스타일이에요!</p>
+<div class="gatsby-highlight" data-language="jsx"><pre style="counter-reset: linenumber NaN" class="language-jsx line-numbers"><code class="language-jsx"><span class="token keyword">const</span> Container <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>tw<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  relative
+  left-full
+  pl-28
+  </span><span class="token template-punctuation string">`</span></span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">
+
+  /* 리스트 스타일 없애기, 기존의 padding 사이즈 줄이기 */
+  ul {
+    </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>tw<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    list-none
+    pl-4
+    </span><span class="token template-punctuation string">`</span></span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">
+  }
+
+  /* 첫번째를 제외한 나머지에 margin-top 주기 */
+  li {
+    </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>tw<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">first:m-0 mt-3</span><span class="token template-punctuation string">`</span></span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">
+  }
+
+  /* heading이 사이즈를 넘어서면 ...로 축약 */
+  p {
+    </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>tw<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">truncate</span><span class="token template-punctuation string">`</span></span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">
+  }
+
+  /* a tag 스타일 초기화. 더 멋진 컬러! 더 멋진 텍스트! */
+  a {
+    </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>tw<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    text-gray-600 hover:text-gray-900 text-sm
+    no-underline
+    </span><span class="token template-punctuation string">`</span></span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">
+  }
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> Contents <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  /* 약간의 border-radius와 padding. 미쳐버린 box-shadow */
+  </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>tw<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  fixed w-80 rounded-3xl p-5 
+  </span><span class="token template-punctuation string">`</span></span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>그래서 <code>항상 따라다니게</code>에서 만든 스타일에 여러가지를 더 붙여줄 겁니다.
+요상하게 벌어진 텍스트 사이의 간격과 사이즈를 줄여주고 왠지 멋져보일 거 같은 색깔을 넣어줄 거에요.</p>
+<h3 id="잠깐만" style="position:relative;"><a href="#%EC%9E%A0%EA%B9%90%EB%A7%8C" aria-label="잠깐만 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>잠깐만!</h3>
+<p>그 전에 잠깐! 여러분들이 알고 가야 하는 사실이 있습니다. Table of Contents의 html 구조에 관한 건데요.</p>
+<p>Table of Contents의 html은 다음과 같은 구조로 되어 있습니다.</p>
+<div class="gatsby-highlight" data-language="html"><pre style="counter-reset: linenumber NaN" class="language-html line-numbers"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token punctuation">/></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token punctuation">/></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul...</span> <span class="token punctuation">/></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>세상에, 저렇게 <code>&#x3C;ul /></code>이 안으로 계-속 이어져요.</p>
+<p>그렇다면 heading은 전부 <code>&#x3C;p /></code>에 들어 있다고 생각할 수도 있겠죠? 놀랍지만, 또 예외가 있습니다...</p>
+<div class="gatsby-highlight" data-language="md"><pre style="counter-reset: linenumber NaN" class="language-md line-numbers"><code class="language-md"><span class="token title important"><span class="token punctuation">#</span> 1</span>
+
+<span class="token title important"><span class="token punctuation">##</span> 2</span>
+
+<span class="token title important"><span class="token punctuation">###</span> 3</span>
+
+<span class="token title important"><span class="token punctuation">###</span> 3</span>
+
+<span class="token title important"><span class="token punctuation">##</span> 2</span>
+
+<span class="token title important"><span class="token punctuation">###</span> 3</span>
+
+<span class="token title important"><span class="token punctuation">###</span> 3</span>
+
+<span class="token title important"><span class="token punctuation">##</span> 2</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 396px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/b-log/static/214c36dc5aee24bcb1a1f59495929193/db910/2022-02-09-13-09-00.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 162.83783783783784%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAhCAYAAADZPosTAAAACXBIWXMAABYlAAAWJQFJUiTwAAADr0lEQVRIx52WWW/bOBSF/f//0WAwwDzMTJG2DwlaO7GTWF5kU7I2iqvERWcgKt5qG3VLgLZhiJf38pz7USOpFGrKoAoJVSs469B13dnsx/77Z2NUUYo8yyFTgSou0eFy4b3BQsD+Q0iJvCpQvGUotgWY4MheUqQvBL7zh6D3zBBQ6wZccLCkBk0qSKmgSgWRi7sDnQUUQoKkCeiyQjkv4DqH3x0jQgjSJAFJEkwmz1i8LjD7PEW8WmMeRYiiCK+vb/g2noRnkoSgX5P0awi5mKPVaoX1eo3FYoHv4wneZ+94fphgEUWYTqd4fZ9jPJ7g8fEJm3iN5XKF5XKJxXKJOI4Rb+Kwvo/Tz1FQMNQP+OH8IblEGZXgyRzZ9At2L1+haYl/pxp/TxR4WeH1bY5imYM8baCEOgg3OrVGa33wISM1eMpgtEIraxgt0XmHjHvsmEfnPbTWaGULTTX8PpP+DI8KITiQ5TXqFUW1KqFVc/TiqS+viHFQeW9aax02hEDRvtwCjdJXTX1h8u4kIE4C9mkzxtCoBnRVodENvLPD2VoTflvr4bshSp+A8y6sO23P0bVdBRNBFLZ9Q/r8gOT5C3i2w6eZxl+TBt9jg10msJhH2K4I0ieCIs6PZ7gP2u/W6vYoStvAtgq2Hc6yVh0IdUiZg/WAMW3I1EgDZ9yxl08z5BUPopTLIpR9GxDXIXI8w86jTimqeYk6oQfqHBH2Y9/iKuYOtgn+S2vUMQ1K7711+vDd+HLWolqXKKYZaFpdLfNuwDLOUWQFOGHgOYdpzXkpGBx/d0AhBKqKQuYSNaGXxA7xfrFkLgSyMkc+2yGPM9SsRjomIOPNGbHvDtg0LYQU4AkDJRVU3/iiRcP0r5c8EFtgm3wQOypCS52VfAf6L3zYj57Ikgpk0x30CeN+Njqc+HD/p3MOveKtalBvKNqmDUAIprcmWMs6H1rO+QEOxhg458875VoWkh/hkIw/gUweIPIM/7wo/PGtwdeoxS6T4ZogqwTJ4/YGHLoBDn231Ns6wMGZBs6agUJNh1J4VNKjT8xaGzrMKANvb8GhYGBxDbquAht/Gw79bus4hqwEivccbdvelOCmON0PxFZKwTQmiKK5/mChhpEsMFFoB226IIrWBm3PQ2NhG3uAyXVi1yK8QTDyfiC2KHL8N9P4c9zg87xFkklE83kg9oUop8JooYMoIuNh94GDw0Z9dlR6UOVD4fu13vlzH3Yfd2hvUF5ysE0drtHeizeZ2F0X5X+i/QvL7dphcgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="???"
+        title="???"
+        src="/b-log/static/214c36dc5aee24bcb1a1f59495929193/db910/2022-02-09-13-09-00.png"
+        srcset="/b-log/static/214c36dc5aee24bcb1a1f59495929193/12f09/2022-02-09-13-09-00.png 148w,
+/b-log/static/214c36dc5aee24bcb1a1f59495929193/e4a3f/2022-02-09-13-09-00.png 295w,
+/b-log/static/214c36dc5aee24bcb1a1f59495929193/db910/2022-02-09-13-09-00.png 396w"
+        sizes="(max-width: 396px) 100vw, 396px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">???</figcaption>
+  </figure></p>
+<p>이런 구조의 마크다운이 있다고 할 때, 각각의 제일 하단 heading, <code>### 3</code> 같은 경우는 그냥 <code>&#x3C;li /></code>에 넣어주고 끝이에요! heading 차별이얏!!</p>
+<p>이런 요상한 구조 때문에 <code>&#x3C;ul /> &#x3C;li /></code> 둘 다 스타일을 적용해줘야 합니다. 헉...</p>
+<h3 id="설명" style="position:relative;"><a href="#%EC%84%A4%EB%AA%85" aria-label="설명 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>설명!</h3>
+<h4 id="1-야시꾸리한-텍스트-사이의-간격-조정하기" style="position:relative;"><a href="#1-%EC%95%BC%EC%8B%9C%EA%BE%B8%EB%A6%AC%ED%95%9C-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%82%AC%EC%9D%B4%EC%9D%98-%EA%B0%84%EA%B2%A9-%EC%A1%B0%EC%A0%95%ED%95%98%EA%B8%B0" aria-label="1 야시꾸리한 텍스트 사이의 간격 조정하기 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. 야시꾸리한 텍스트 사이의 간격 조정하기</h4>
+<p>간격, 진짜 개판입니다! 이 것들을 전부 덮어 씌울거에요!</p>
+<div class="gatsby-highlight" data-language="jsx"><pre style="counter-reset: linenumber NaN" class="language-jsx line-numbers"><code class="language-jsx"><span class="token comment">/* 리스트 스타일 없애기, 기존의 padding 사이즈 줄이기 */</span>
+ul <span class="token punctuation">{</span>
+  $<span class="token punctuation">{</span>tw<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  list-none
+  pl-4
+  </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>먼저 리스트 앞의 기호들을 전부 없애고 padding 크기를 조금 줄여 줄 거에요. 기존은 padding 크기가 너무 컸거든요.</p>
+<div class="gatsby-highlight" data-language="jsx"><pre style="counter-reset: linenumber NaN" class="language-jsx line-numbers"><code class="language-jsx">li <span class="token punctuation">{</span>
+  $<span class="token punctuation">{</span>tw<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">first:m-0 mt-3</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span></span></pre></div>
+<p>li에도 약간의 간격을 넣었습니다. 아까 ul, li 둘 다 스타일을 적용해줘야 한다고 했죠? li에 heading이 바로 저장된 경우를 대비해
+여러 li가 존재한다면 상단에 간격을 넣어주기로 했어요.</p>
+<h4 id="2-a-tag" style="position:relative;"><a href="#2-a-tag" aria-label="2 a tag permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. a tag</h4>
+<p>모든 텍스트는 실제로는 a tag 안에 들어가 있습니다. 그래서 a tag의 스타일도 조금 손을 봐줄 거에요.</p>
+<div class="gatsby-highlight" data-language="jsx"><pre style="counter-reset: linenumber NaN" class="language-jsx line-numbers"><code class="language-jsx">a <span class="token punctuation">{</span>
+  <span class="token comment">/* a tag 스타일 초기화. 더 멋진 컬러! 더 멋진 텍스트! */</span>
+  $<span class="token punctuation">{</span>tw<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  text-gray-600 hover:text-gray-900 text-sm
+  no-underline
+  </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>기본 색깔은 연한 회색 계열로, a tag에 마우스를 올리면 진한 회색 계열로 달라지게 했습니다.
+크기도 조금 줄여 줬어요. 너무 크면 멋지지 않아요!</p>
+<p>거기에 a tag의 고질병이 있죠? underline도 꼭 없애줘야 해요!</p>
+<h4 id="3-box-shadow" style="position:relative;"><a href="#3-box-shadow" aria-label="3 box shadow permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. box shadow</h4>
+<p>마지막입니다ㅏㅏ!</p>
+<p>꽤 멋있어 졌지만 아쉬운 부분이 있어요. 바로 외부와 Table of Contents를 구별해주는 게 없다는 거에요!</p>
+<div class="gatsby-highlight" data-language="jsx"><pre style="counter-reset: linenumber NaN" class="language-jsx line-numbers"><code class="language-jsx"><span class="token keyword">const</span> Contents <span class="token operator">=</span> styled<span class="token punctuation">.</span>div<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  /* 약간의 border-radius와 padding. 미쳐버린 box-shadow */
+  </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>tw<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  fixed w-80 rounded-3xl p-5 
+  </span><span class="token template-punctuation string">`</span></span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>그래서 만들었습니다. 테두리를 둥그렇게 깎고 그림자를 먹였어요!</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/b-log/static/18192db6602a2e48f4dfeee45df15adb/302a4/2022-02-09-14-36-59.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 101.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAABYlAAAWJQFJUiTwAAABiUlEQVQ4y6VUa2+DMAzk///BfuiXSpPaFZLwSMIjhN502cJSBoWplizTYi5n++LMjR7OjXg8HqAxvuPZ4DyGFcBpmjCOI5xzh535q4AEo2+xWOZF77oO2cf1hlqbJ3Y8iWaMRd1oNNqgEAplVSMvJG6fOfJCYBw9UtNaIzudTrhcLk+ApE+r6gb3XMC2bfg4tqDvhxBTtrSyLJEtSyH1mExAMmrbbn6/tPRbpRSy9EWMEVAbi0JICFlCquqlCmbAVwzZQyEVvPdYHvyS4XJ6wzDwCcPgAiBL19rMw0pB/wGIAEBApaow4bcAGVkqp6zKKkhnmXsYkD2cfn6zj9Tc3pXbB5ymWYss94j9mXIq7HiAtW0o1/vv6bMNdPYzCj2qYFeHj6Rs9pLOK8iexni93dFo/QvYtu1c3hpDRjLknT5U8vl8Dlsi3SBrgGQjVQmXSGdzKFslR2OPuIQp9I0rvb0c4vrq+x7WWjRNE1zrJqwnPtd1/eTxPynlumzIiG2ISUKIXWe5xhh8AT0EImb2dOs5AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="짜잔!"
+        title="짜잔!"
+        src="/b-log/static/18192db6602a2e48f4dfeee45df15adb/fcda8/2022-02-09-14-36-59.png"
+        srcset="/b-log/static/18192db6602a2e48f4dfeee45df15adb/12f09/2022-02-09-14-36-59.png 148w,
+/b-log/static/18192db6602a2e48f4dfeee45df15adb/e4a3f/2022-02-09-14-36-59.png 295w,
+/b-log/static/18192db6602a2e48f4dfeee45df15adb/fcda8/2022-02-09-14-36-59.png 590w,
+/b-log/static/18192db6602a2e48f4dfeee45df15adb/efc66/2022-02-09-14-36-59.png 885w,
+/b-log/static/18192db6602a2e48f4dfeee45df15adb/302a4/2022-02-09-14-36-59.png 1080w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">짜잔!</figcaption>
+  </figure></p>
+<p>어때요. 멋져 보이나요?</p>
+<h1 id="마무리" style="position:relative;"><a href="#%EB%A7%88%EB%AC%B4%EB%A6%AC" aria-label="마무리 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>마무리</h1>
+<p>결과물을 보니 정말 만족스러워요. 이런 환경을 원했다니까요? 이제 글을 쓸 때도 훨씬 편할 거 같아요.</p>
+<p>여러분들은 어떤가요? 별로라구요? ...이해하겠습니다.</p>
+<p>여담으로 말하는 건데 사실은 지금 저 스타일이 아닌 <code>Neumorphism</code> 스타일로 만드려고 했어요.</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/b-log/static/29a84353d12adb67a30e4e6b74af6186/e5715/2022-02-09-14-45-49.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 64.1891891891892%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACPklEQVQoz1WS/UvbQBzG+2fvBWQ/DLdhhSLM4TbY0KWd+kttNXWbbNrWFxj7YYMx0Fo1SXO5u9xdkntLcJcbsRUdfDieuy8Pz/fgqb15Ylfm7PKjO149ts0F21q8pX5P37LRsJtLtrYyZ53FstcyrmN6jnGdstcs97fMwZbpd8qDTtnvVtd+Z/a43zYHHdN5W240bG35of3WMWmuMFNxohCTcVppxFSIOWTKhylOdIAyluUk0STJsyIf9v4261PzVglpdhmkQcTPr2iI5IXPAJKnl9iL+NgjAMvRFYlp4YXcBxIlcuia1szcNoRrLxQTJCdQBpGARMNYASQR0ZhqwgoYa4BlhFUIFRV6Zn75wH5tG5yKSSQgVoioEImYaR9k5x4FSI49StIiotUIEQ2xplzNzO+e2oFrCFc+EBNYhYdVYI6IjmIVYQVi6V+Jn99hTPNZMleDbeO8sLWPi/Zkz0Amq/9AHiIRYUnS3AfZ2Gd+mI2C+PcP6joXNyNVJQvd75rVZ7bWqtvjzyaRVRRJcpoUhBWYFDErENExqwTNrml6jWlBkiKmRaryftesTc0nXwxi4tcfcHZJvDADMB+dVQufXuAg4gEUI4+e+2zsJwCpMFIkU/fMe4YXGicaJRIniokcp5JkmvCc8jxOFSA8oiKifFqBrNCDHbM2b2vrDbvzvjz+ZA5dc7Rrjnrm8H+OeuZ4tzx0y+FOOdg2g64Zuqb9unQWbG1zya43bgpct80bWrfnfT48t6vzd0zL/w/ZVZmotJDblAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="이 것이 미래다 -희망편-"
+        title="이 것이 미래다 -희망편-"
+        src="/b-log/static/29a84353d12adb67a30e4e6b74af6186/fcda8/2022-02-09-14-45-49.png"
+        srcset="/b-log/static/29a84353d12adb67a30e4e6b74af6186/12f09/2022-02-09-14-45-49.png 148w,
+/b-log/static/29a84353d12adb67a30e4e6b74af6186/e4a3f/2022-02-09-14-45-49.png 295w,
+/b-log/static/29a84353d12adb67a30e4e6b74af6186/fcda8/2022-02-09-14-45-49.png 590w,
+/b-log/static/29a84353d12adb67a30e4e6b74af6186/e5715/2022-02-09-14-45-49.png 768w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">이 것이 미래다 -희망편-</figcaption>
+  </figure></p>
+<p>저 움푹 튀어나오고 들어간 게 진짜 마음에 들었거든요. 근데 저 느낌을 그대로 살리려면 배경색이 하얀 색이면 안돼요.
+그림자를 보면 하얀 색 계열이 포함된 게 보이죠? 저 그림자를 살리기 위해서 어느 정도 전체 배경색을 어둡게 만들어야 되거든요.</p>
+<p>그래서 어둡게 만들어 줬더니, 세상에. 블로그 분위기가 팍 쳐지는 거에요. 블로그 컨셉을 그저 하얀색으로 잡았기 때문에 용납할 수 없었습니다.</p>
+<p>...... 아쉬워라...</p>
+<p>언젠가 써볼 날이 오겠죠? 와야 될텐데...</p></section></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/Table of Contents가 힘을 숨김/";window.___webpackCompilationHash="fae867cc0ea84673653c";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-9b448caf838dbc18971d.js"],"app":["/app-423680434a9201db7ee2.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-1013cbdf27b7225f497f.js"],"component---src-pages-index-js":["/component---src-pages-index-js-d79b3eb9493dac81784f.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-549bf8357642c940d19b.js"],"component---src-templates-tag-page-js":["/component---src-templates-tag-page-js-407c8a7c33abc6ac453d.js"]};/*]]>*/</script><script src="/b-log/polyfill-9b448caf838dbc18971d.js" nomodule=""></script><script src="/b-log/component---src-templates-blog-post-js-549bf8357642c940d19b.js" async=""></script><script src="/b-log/8c818aafd19f020a43cdd28cb6a1c8df7d18c0d2-0fdccc7611a7c55272d7.js" async=""></script><script src="/b-log/app-423680434a9201db7ee2.js" async=""></script><script src="/b-log/framework-2c67c8bfa55bfd760b60.js" async=""></script><script src="/b-log/webpack-runtime-76465a399045a41f636f.js" async=""></script></body></html>

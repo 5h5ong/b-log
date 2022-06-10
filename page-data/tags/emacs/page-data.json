@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-page-js",
+    "path": "/tags/emacs",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/emacs를 알아봅시다/"},"frontmatter":{"title":"emacs를 알아봅시다","date":"March 13, 2022","tags":["emacs","guide"]}}}]}},"pageContext":{"tag":"emacs"}},
+    "staticQueryHashes": []}

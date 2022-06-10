@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-page-js",
+    "path": "/tags/idea",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/우당탕탕 폭풍을 부르는 ideavim 설정 대작전/"},"frontmatter":{"title":"우당탕탕 폭풍을 부르는 idea 설정 대작전","date":"February 25, 2022","tags":["idea","guide"]}}}]}},"pageContext":{"tag":"idea"}},
+    "staticQueryHashes": []}

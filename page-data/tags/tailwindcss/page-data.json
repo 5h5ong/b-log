@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-page-js",
+    "path": "/tags/tailwindcss",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/tailwindcss와 함께하는 Gatsby/"},"frontmatter":{"title":"tailwindcss와 함께하는 Gatsby","date":"February 07, 2022","tags":["gatsby","guide","tailwindcss","solution"]}}}]}},"pageContext":{"tag":"tailwindcss"}},
+    "staticQueryHashes": []}

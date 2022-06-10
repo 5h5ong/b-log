@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-page-js",
+    "path": "/tags/github",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/Gatsby는 배포하고 싶어/"},"frontmatter":{"title":"Gatsby는 배포하고 싶어!","date":"February 15, 2022","tags":["gatsby","deploy","github","guide"]}}}]}},"pageContext":{"tag":"github"}},
+    "staticQueryHashes": []}

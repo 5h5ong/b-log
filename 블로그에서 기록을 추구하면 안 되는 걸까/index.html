@@ -1,0 +1,394 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta data-react-helmet="true" name="google-site-verification" content="hXzBIUorkHEVsO9Jb_mIDuDqsTRSzyOx9rvhZ3GrZj8"/><meta name="generator" content="Gatsby 4.6.2"/><style data-href="/b-log/styles.b776309b4decf2925be2.css" data-identity="gatsby-global-css">code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#f8f8f2;font-family:Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{border-radius:.3em;margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2e3440}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#636f88}.token.punctuation{color:#81a1c1}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#81a1c1}.token.number{color:#b48ead}.token.boolean{color:#81a1c1}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a3be8c}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#81a1c1}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#88c0d0}.token.keyword{color:#81a1c1}.token.important,.token.regex{color:#ebcb8b}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="alternate" type="application/rss+xml" title="b:Log Rss Feed" href="/b-log/rss.xml"/><link rel="sitemap" type="application/xml" href="/b-log/sitemap/sitemap-index.xml"/><style data-styled="" data-styled-version="5.3.3">.nvvNn{position:relative;left:100%;padding-left:4rem;line-height:2.25rem;}/*!sc*/
+.nvvNn ul{list-style-type:none;padding-left:1rem;}/*!sc*/
+.nvvNn li{margin:0px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}/*!sc*/
+.nvvNn p{margin:0px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}/*!sc*/
+.nvvNn a{--tw-text-opacity:1;color:rgba(75,85,99,var(--tw-text-opacity));font-size:0.875rem;line-height:1.25rem;-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+.nvvNn a:hover{--tw-text-opacity:1;color:rgba(17,24,39,var(--tw-text-opacity));}/*!sc*/
+data-styled.g1[id="Toc__Container-sc-9zrjd9-0"]{content:"nvvNn,"}/*!sc*/
+.dmEqLl{position:fixed;width:18rem;height:50%;border-radius:1.5rem;padding:1.25rem;overflow-y:auto;box-shadow:20px 20px 60px #d9d9d9,-20px -20px 60px #ffffff;}/*!sc*/
+data-styled.g2[id="Toc__Contents-sc-9zrjd9-1"]{content:"dmEqLl,"}/*!sc*/
+.jQTdsB{--tw-text-opacity:1;color:rgba(0,0,0,var(--tw-text-opacity));-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+.jQTdsB:hover{--tw-text-opacity:1;color:rgba(75,85,99,var(--tw-text-opacity));}/*!sc*/
+data-styled.g3[id="StyledLink-sc-3uouk6-0"]{content:"jQTdsB,"}/*!sc*/
+.rWuXm{font-size:0.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgba(156,163,175,var(--tw-text-opacity));}/*!sc*/
+data-styled.g4[id="Tag__TagStyledLink-sc-1hcx1ww-0"]{content:"rWuXm,"}/*!sc*/
+.gOnOul{margin-right:0.5rem;}/*!sc*/
+.gOnOul:last-child{margin:0px;}/*!sc*/
+data-styled.g5[id="gaps__GapHorizontality-sc-1ekq037-0"]{content:"gOnOul,"}/*!sc*/
+.kyIceB{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-size:3rem;line-height:1;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;margin-bottom:4rem;}/*!sc*/
+data-styled.g6[id="BlogTitle__StyledH1-sc-15e6xzu-0"]{content:"kyIceB,"}/*!sc*/
+.evzjD{margin-top:5rem;margin-bottom:8rem;}/*!sc*/
+data-styled.g7[id="BlogHeader__HeaderContainer-sc-svto0z-0"]{content:"evzjD,"}/*!sc*/
+.AYgxb{margin-top:10rem;margin-bottom:10rem;}/*!sc*/
+data-styled.g8[id="blog-post__Container-sc-bktxku-0"]{content:"AYgxb,"}/*!sc*/
+.bWWXUD{max-width:768px;margin:auto;}/*!sc*/
+data-styled.g9[id="blog-post__SectionContainer-sc-bktxku-1"]{content:"bWWXUD,"}/*!sc*/
+.dgABOP{max-width:1024px;margin:auto;margin-bottom:7rem;}/*!sc*/
+data-styled.g10[id="blog-post__Header-sc-bktxku-2"]{content:"dgABOP,"}/*!sc*/
+.kmNTJS{margin-bottom:0px;font-size:3.75rem;line-height:1;}/*!sc*/
+data-styled.g11[id="blog-post__PostTitle-sc-bktxku-3"]{content:"kmNTJS,"}/*!sc*/
+.ktKOFE ul{padding-left:1.75rem;line-height:2rem;list-style-type:none;}/*!sc*/
+.ktKOFE ul li:before{content:'»';margin-right:0.5rem;--tw-text-opacity:1;color:rgba(156,163,175,var(--tw-text-opacity));}/*!sc*/
+.ktKOFE ol{padding-left:1.75rem;line-height:2rem;}/*!sc*/
+.ktKOFE p{font-size:1.125rem;line-height:1.75rem;}/*!sc*/
+.ktKOFE code{font-size:0.875rem;line-height:1.25rem;}/*!sc*/
+.ktKOFE table{table-layout:auto;padding:1.25rem;border-radius:0.75rem;margin:auto;border-width:1px;--tw-border-opacity:1;border-color:rgba(156,163,175,var(--tw-border-opacity));border-style:solid;}/*!sc*/
+.ktKOFE th{padding-bottom:1rem;border-width:0px;border-bottom-width:1px;--tw-border-opacity:1;border-color:rgba(229,231,235,var(--tw-border-opacity));border-style:solid;}/*!sc*/
+.ktKOFE td{padding:0.75rem;--tw-text-opacity:1;color:rgba(75,85,99,var(--tw-text-opacity));font-size:0.875rem;line-height:1.25rem;}/*!sc*/
+.ktKOFE blockquote{margin-left:1rem;margin-right:1rem;padding-left:0.5rem;border-width:0px;border-left-width:4px;border-style:solid;--tw-border-opacity:1;border-color:rgba(156,163,175,var(--tw-border-opacity));}/*!sc*/
+.ktKOFE .gatsby-resp-image-figcaption{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-top:0.5rem;font-size:0.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgba(107,114,128,var(--tw-text-opacity));}/*!sc*/
+.ktKOFE h1{font-size:3rem;line-height:1;}/*!sc*/
+.ktKOFE h1:before{content:'#';--tw-text-opacity:1;color:rgba(209,213,219,var(--tw-text-opacity));margin-left:-1.6rem;}/*!sc*/
+.ktKOFE h2{font-size:2.25rem;line-height:2.5rem;}/*!sc*/
+.ktKOFE h2:before{content:'##';--tw-text-opacity:1;color:rgba(209,213,219,var(--tw-text-opacity));margin-left:-2.4rem;}/*!sc*/
+.ktKOFE h3{font-size:1.875rem;line-height:2.25rem;}/*!sc*/
+.ktKOFE h3:before{content:'###';--tw-text-opacity:1;color:rgba(209,213,219,var(--tw-text-opacity));margin-left:-3rem;}/*!sc*/
+.ktKOFE h4{font-size:1.5rem;line-height:2rem;}/*!sc*/
+.ktKOFE h4:before{content:'####';--tw-text-opacity:1;color:rgba(209,213,219,var(--tw-text-opacity));margin-left:-3.1rem;}/*!sc*/
+.ktKOFE h5{font-size:1.25rem;line-height:1.75rem;}/*!sc*/
+.ktKOFE h5:before{content:'#####';--tw-text-opacity:1;color:rgba(209,213,219,var(--tw-text-opacity));margin-left:-3.3rem;}/*!sc*/
+.ktKOFE h6{font-size:1.125rem;line-height:1.75rem;}/*!sc*/
+.ktKOFE h6:before{content:'######';--tw-text-opacity:1;color:rgba(209,213,219,var(--tw-text-opacity));margin-left:-3.5rem;}/*!sc*/
+data-styled.g12[id="blog-post__Section-sc-bktxku-4"]{content:"ktKOFE,"}/*!sc*/
+</style><title data-react-helmet="true">b:Log | 블로그에서 기록을 추구하면 안 되는 걸까</title><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/b-log/webpack-runtime-76465a399045a41f636f.js"/><link as="script" rel="preload" href="/b-log/framework-2c67c8bfa55bfd760b60.js"/><link as="script" rel="preload" href="/b-log/app-423680434a9201db7ee2.js"/><link as="script" rel="preload" href="/b-log/8c818aafd19f020a43cdd28cb6a1c8df7d18c0d2-0fdccc7611a7c55272d7.js"/><link as="script" rel="preload" href="/b-log/component---src-templates-blog-post-js-549bf8357642c940d19b.js"/><link as="fetch" rel="preload" href="/b-log/page-data/블로그에서 기록을 추구하면 안 되는 걸까/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/b-log/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="BlogHeader__HeaderContainer-sc-svto0z-0 evzjD"><a class="StyledLink-sc-3uouk6-0 jQTdsB" href="/b-log/"><h1 class="BlogTitle__StyledH1-sc-15e6xzu-0 kyIceB">b:LOG</h1></a></div><div class="blog-post__Container-sc-bktxku-0 AYgxb"><header class="blog-post__Header-sc-bktxku-2 dgABOP"><h1 class="blog-post__PostTitle-sc-bktxku-3 kmNTJS">블로그에서 기록을 추구하면 안 되는 걸까</h1><span class="gaps__GapHorizontality-sc-1ekq037-0 gOnOul"><span>February 05, 2022</span></span><span class="gaps__GapHorizontality-sc-1ekq037-0 gOnOul"><a class="StyledLink-sc-3uouk6-0 Tag__TagStyledLink-sc-1hcx1ww-0 jQTdsB rWuXm" href="/b-log/tags/gatsby">#<!-- -->gatsby</a></span><span class="gaps__GapHorizontality-sc-1ekq037-0 gOnOul"><a class="StyledLink-sc-3uouk6-0 Tag__TagStyledLink-sc-1hcx1ww-0 jQTdsB rWuXm" href="/b-log/tags/guide">#<!-- -->guide</a></span></header><div class="blog-post__SectionContainer-sc-bktxku-1 bWWXUD"><div class="Toc__Container-sc-9zrjd9-0 nvvNn"><div class="Toc__Contents-sc-9zrjd9-1 dmEqLl"><ul>
+<li>
+<p><a href="#gatsby">Gatsby</a></p>
+<ul>
+<li>
+<p><a href="#%EC%A4%80%EB%B9%84%EB%AC%BC">준비물</a></p>
+</li>
+<li>
+<p><a href="#%ED%95%B4%EB%B4%85%EC%8B%9C%EB%8B%A4">해봅시다!</a></p>
+<ul>
+<li>
+<p><a href="#%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4">마크다운</a></p>
+</li>
+<li>
+<p><a href="#%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%83%9D%EC%84%B1">블로그 페이지 생성</a></p>
+<ul>
+<li><a href="#%ED%85%9C%ED%94%8C%EB%A6%BF-%ED%8E%98%EC%9D%B4%EC%A7%80">템플릿 페이지</a></li>
+<li><a href="#%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%83%9D%EC%84%B1">페이지 생성</a></li>
+<li><a href="#%EC%9E%A0%EA%B9%90%EB%A7%8C">잠깐만!</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B3%B4%EC%97%AC%EC%A3%BC%EA%B8%B0">페이지 보여주기</a></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></div></div><section class="blog-post__Section-sc-bktxku-4 ktKOFE"><p>저는 어디다 적어두는 걸 좋아합니다. 그래요. 다 좋지만, 결국 마음에 드는 노트 앱을 찾지 못했던 게 모든 문제의 시작이었습니다...
+Google Keeps, Simplenote, Obsidian.md, Joplin, Onenote, Turtl... 으악!</p>
+<p>그렇게 도자기를 깨 부수는 장인의 심정으로 두 눈에 불을 켜고 다닌 결과 그럭저럭 마음에 드는 노트 앱을 찾을 수 있었어요!
+그 이름하야 바로 <code>Notion</code>!</p>
+<p>꽤 마음에 들었어요! 이렇게 저렇게 대충 배치해도 생각보다 보기도 좋고 정리하기도 쉽구요. 거기에다 남자의 마음을 울리는 데이터베이스까지, 이거 못 참거든요.</p>
+<p>그래도 마음 속 한 켠에는 쪼~금. 아주 쪼오~~~금 불편했습니다. <code>Notion</code>은 오프라인 저장을 지원하지 않았거든요!!</p>
+<p>자고로 기록이란 제 두 손아귀에 원본이 쥐어 져야만 편안한 기분이 들지 않겠어요? 언젠가 <code>Notion</code>이 오프라인 저장을 지원해 주리라 믿었지만 결국 저를 배신해버린 겁니다. 그렇게 나오신다 이 말이죠? 까라면 까라지..</p>
+<p>결국 목마른 놈이 우물을 판다고 하죠?</p>
+<p>그렇게 모든, 진짜로 모든 것! 을 직접 가질 수 있는 방법이 없나 찾아보다 결국 블로그의 마수에 빠지게 된 겁니다. 어찌 이럴수가.</p>
+<h1 id="gatsby" style="position:relative;"><a href="#gatsby" aria-label="gatsby permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Gatsby</h1>
+<p><a href="https://www.gatsbyjs.com/">The Fastest Frontend Framework for Headless CMS's | Gatsby (gatsbyjs.com)</a></p>
+<p>그래서 선택했습니다! Gatsby! 리엑트를 기반으로 깔끔한 정적 사이트를 만들어주는 프레임워크라니, 정말 완벽하지 않나요..?</p>
+<h2 id="준비물" style="position:relative;"><a href="#%EC%A4%80%EB%B9%84%EB%AC%BC" aria-label="준비물 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>준비물</h2>
+<ul>
+<li>Gatsby (세 번 별표, 빨간줄 쫘악)</li>
+<li>세기의 대문호의 시그널을 받은 기가 막힌 마크다운</li>
+</ul>
+<p>다음과 같은 준비물이 필요합니다.</p>
+<h2 id="해봅시다" style="position:relative;"><a href="#%ED%95%B4%EB%B4%85%EC%8B%9C%EB%8B%A4" aria-label="해봅시다 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>해봅시다!</h2>
+<p>Gatsby는 그저 근본입니다. 간단하게 마크다운을 저장하고 다룰 수 있게 만들어주기 때문이에요!</p>
+<p>Gatsby를 설치했다면, 이어서 아래의 패키지를 설치하세요.</p>
+<ul>
+<li>gatsby-source-filesystem</li>
+<li>gatsby-transformer-remark</li>
+</ul>
+<p>설치를 마쳤다면, <code>gatsby-config.js</code>를 설정해줘야 합니다.</p>
+<h3 id="마크다운" style="position:relative;"><a href="#%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4" aria-label="마크다운 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>마크다운</h3>
+<div class="gatsby-highlight" data-language="jsx"><pre style="counter-reset: linenumber NaN" class="language-jsx line-numbers"><code class="language-jsx"><span class="token comment">// `gatsby-config.js`</span>
+<span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token literal-property property">resolve</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">gatsby-source-filesystem</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+    <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">blog</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token literal-property property">path</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>__dirname<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/content/blog</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">gatsby-transformer-remark</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>먼저 우리의 기가 막힌 마크다운이 어디에 있는지 Gatsby에게 알려줘야 합니다. 이 때 필요한 것이 바로 <code>gatsby-source-filesystem</code> 이에요.</p>
+<p>마크다운을 어디에 저장할지 지정해 줄 수 있어요. 예시의 경우는 <code>/content/blog</code>에 마크다운들이 위치해야 되겠죠?</p>
+<p>다음은 마크다운을 실제로 사용할 수 있게 만들어줘야 합니다. <code>gatsby-transformer-remark</code> 보이죠? 저게 마크다운을 파싱해서 사용 가능한 형식으로 바꿔줍니다.
+마크다운 안의 정보를 비로소 블로그에 표시해 줄 수 있는거죠!</p>
+<p>이 과정까지 진행했다면, 여러분들은 이제 블로그를 만들 첫 발자국을 땐 겁니다. 와!</p>
+<h3 id="블로그-페이지-생성" style="position:relative;"><a href="#%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%83%9D%EC%84%B1" aria-label="블로그 페이지 생성 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>블로그 페이지 생성</h3>
+<p>다음으로 가져온 마크다운들의 정보를 활용해 페이지를 만들어줘야 합니다.</p>
+<h4 id="템플릿-페이지" style="position:relative;"><a href="#%ED%85%9C%ED%94%8C%EB%A6%BF-%ED%8E%98%EC%9D%B4%EC%A7%80" aria-label="템플릿 페이지 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>템플릿 페이지</h4>
+<p>먼저 마크다운을 표시할 페이지의 틀을 만들어줘야 합니다.</p>
+<div class="gatsby-highlight" data-language="jsx"><pre style="counter-reset: linenumber NaN" class="language-jsx line-numbers"><code class="language-jsx"><span class="token comment">// templates/blog-post.js</span>
+<span class="token keyword">const</span> <span class="token function-variable function">BlogPostTemplate</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> data <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token comment">// 마크다운 가져오기</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> markdownRemark <span class="token punctuation">}</span> <span class="token operator">=</span> data<span class="token punctuation">;</span>
+  <span class="token comment">// 마크다운 제일 앞의 메타데이터(title, date), 파싱된 html</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> frontmatter<span class="token punctuation">,</span> html <span class="token punctuation">}</span> <span class="token operator">=</span> markdownRemark<span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span><span class="token punctuation">{</span>frontmatter<span class="token punctuation">.</span>title<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token punctuation">{</span>frontmatter<span class="token punctuation">.</span>date<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">dangerouslySetInnerHTML</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token literal-property property">__html</span><span class="token operator">:</span> html <span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span></span><span class="token punctuation">></span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> BlogPostTemplate<span class="token punctuation">;</span>
+
+<span class="token comment">// 페이지 생성 때 들어온 context의 id로 query</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> pageQuery <span class="token operator">=</span> graphql<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  query BlogPostBySlug($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      id
+      html
+      frontmatter {
+        title
+        date(formatString: "MMMM DD, YYYY")
+      }
+    }
+  }
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>템플릿 페이지는 간단히 다음의 과정을 거칩니다!</p>
+<ol>
+<li>graphql을 통해 필요한 마크다운 데이터 가져오기</li>
+<li>그걸로 페이지 표시하기</li>
+<li>Profit!</li>
+</ol>
+<p>그 중에서 graphql query를 이해하지 못할 수도 있어요. 아니, id는 대체 어디서 들어온담?</p>
+<p>그 답은 바로 다음 섹션에 있습니다! 새로운 페이지를 만드는 과정에서 context를 통해 마법이 일어나게 되는 거에요!</p>
+<h4 id="페이지-생성" style="position:relative;"><a href="#%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%83%9D%EC%84%B1" aria-label="페이지 생성 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>페이지 생성</h4>
+<p><a href="https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/">Gatsby Node APIs</a></p>
+<p>템플릿 페이지를 만들었다면 이제 진짜 페이지를 만들 차례입니다.</p>
+<p>이 때 사용하는 게 <code>gatsby-node.js</code>라는 파일입니다. 이 파일 안에서 동적으로 페이지들을 만들 수 있어요.</p>
+<div class="gatsby-highlight" data-language="typescript"><pre style="counter-reset: linenumber NaN" class="language-typescript line-numbers"><code class="language-typescript">exports<span class="token punctuation">.</span><span class="token function-variable function">createPages</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> graphql<span class="token punctuation">,</span> actions <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> createPage <span class="token punctuation">}</span> <span class="token operator">=</span> actions<span class="token punctuation">;</span>
+
+  <span class="token comment">// 템플릿 페이지 가져오기</span>
+  <span class="token keyword">const</span> blogPost <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">./src/templates/blog-post.js</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 모든 마크다운 파일의 데이터 가져오기</span>
+  <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">graphql</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    query {
+      allMarkdownRemark(sort: { fields: [frontmatter___date], order: ASC }) {
+        nodes {
+          id
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 마크다운 파일들의 데이터</span>
+  <span class="token keyword">const</span> posts <span class="token operator">=</span> result<span class="token punctuation">.</span>data<span class="token punctuation">.</span>allMarkdownRemark<span class="token punctuation">.</span>nodes<span class="token punctuation">;</span>
+
+  <span class="token comment">// 마크다운 파일이 존재할 때, 하나씩 반복하며 새로운 페이지 생성</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>posts<span class="token punctuation">.</span>length <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    posts<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>post<span class="token punctuation">,</span> index<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> <span class="token punctuation">{</span>
+        id<span class="token punctuation">,</span>
+        fields<span class="token operator">:</span> <span class="token punctuation">{</span> slug <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span> <span class="token operator">=</span> post<span class="token punctuation">;</span>
+
+      <span class="token comment">// 페이지 생성</span>
+      <span class="token function">createPage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token comment">// 생성될 페이지의 주소</span>
+        path<span class="token operator">:</span> slug<span class="token punctuation">,</span>
+        <span class="token comment">// 생성될 페이지의 컴포넌트(템플릿 페이지)</span>
+        component<span class="token operator">:</span> blogPost<span class="token punctuation">,</span>
+        <span class="token comment">// 페이지 컴포넌트에 포함될 props, GraphQL query의 augments로 사용할 수 있음</span>
+        context<span class="token operator">:</span> <span class="token punctuation">{</span>
+          id<span class="token operator">:</span> id<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<ul>
+<li>slug
+<ul>
+<li>content/blog/ 아래의 디렉토리의 이름부터 주소에 포함됨</li>
+<li>ex) content/blog/test -> <a href="https://.../test">https://.../test</a></li>
+</ul>
+</li>
+</ul>
+<p>위의 섹션에서 graphql query의 id를 어떻게 받아오냐? 라고 의문을 가지신 분들, 모두 잠시 멈춰주시길 바랍니다.</p>
+<p>상단의 context가 보이시나요? 저 부분이 바로 핵심입니다. 저기로 넘어가는 데이터들을 Graphql query의 augments로 사용할 수 있어요!</p>
+<p>그렇기 때문에 위에서 적절한 마크다운 데이터를 받아와 표시해줄 수 있던 것 이랍니다. 어때요, 완전 멋지지 않아요?</p>
+<h4 id="잠깐만" style="position:relative;"><a href="#%EC%9E%A0%EA%B9%90%EB%A7%8C" aria-label="잠깐만 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>잠깐만!</h4>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/b-log/static/b3179c7bf9997121453a1b41ad80a4e3/21b4d/2022-02-07-13-13-08.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACl0lEQVQozwXBS1MSAQAA4B2FXdgXwrK8QeQlTxVU3oi7LCAs7IIgoohgMuY0NpglOvnKByiFI800npr+QPcONh26de0XdOw3dOv7AA9X93Lr+nhGHUvqoglLMqN3OhRiWDICMhHf491ePOCljAE8fQwyLyH2FMpfi9hLuNQDaw+AJrSk98fk/qAyFNYF3Op4WGpwkUJIjctMhIqamTJieGhMq2XeIKkOxL6DCjci/kZcHQg3h4AyPKuNTKN0XRqldQtzRCxhM3govb00Gz8oN54xK7yfJuUGc3hHkb8lc1282IfLfVFjCDY/ArLUCrG0ASaOsFRDxVXFmVcxP7fmDr9YTD2enO1mK1WqoMp2iMU2kbtTsLeKzDVR6EMbQ3D9HiD4+li+BdGHKLtNlmp6ZjfnpQuO+a9Hh79//vj25fPe2jZGt4noLsLfygsDMn9PLt8j7Imo1AVkeR7jmiB9grMtrMxZbNNF6wztCH3qPfz7++fX96diroHlLkTcFVTsQqU+zr+XFLpo5hhevgKIdEFW2YLrEbTKEv5wwOLiXPOlYLrj8D3ValGzI+qjTPzbUfYSWu4JKoNR9hxOHWLcGVS8AZBVBm4GoZZetWDxWl3ZqaBHY6Fd822t9TUATEoVAfNkaGFDwPWglYGw/GEkeSRId8BUW8xfACBnBjZtcNPjjFo9JpNP6zDKDeNyZcruKTotwRn7rM027Y5ioXU8XIMS+wjVkmR3wPgeunoNCBmjIGIU5a0TC87L/YO5SY9ZZ9Ap1XaT0e/zTDnsPrtToTJmKGZ4fuaillSl1fGtClE9IJ6fAkISF5NjIjmslRJsMoHDCCZBEBGMo6hBQ2IIjMKoEBhxmkwsRckJCWbRSN16iWMCsRv/A1GfnBHpEOzzAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="2022 02 07 13 13 08"
+        title="2022 02 07 13 13 08"
+        src="/b-log/static/b3179c7bf9997121453a1b41ad80a4e3/fcda8/2022-02-07-13-13-08.png"
+        srcset="/b-log/static/b3179c7bf9997121453a1b41ad80a4e3/12f09/2022-02-07-13-13-08.png 148w,
+/b-log/static/b3179c7bf9997121453a1b41ad80a4e3/e4a3f/2022-02-07-13-13-08.png 295w,
+/b-log/static/b3179c7bf9997121453a1b41ad80a4e3/fcda8/2022-02-07-13-13-08.png 590w,
+/b-log/static/b3179c7bf9997121453a1b41ad80a4e3/efc66/2022-02-07-13-13-08.png 885w,
+/b-log/static/b3179c7bf9997121453a1b41ad80a4e3/c83ae/2022-02-07-13-13-08.png 1180w,
+/b-log/static/b3179c7bf9997121453a1b41ad80a4e3/21b4d/2022-02-07-13-13-08.png 1280w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>그런데 이 상태로 돌려보면 막상 잘 되지 않을거에요. Graphql의 fields는 원래 존재하지 않거든요! 짜잔, 사실 속으신 거에요~</p>
+<p>라고 할 수는 없고, 직접 만들어줘야 해요!</p>
+<div class="gatsby-highlight" data-language="typescript"><pre style="counter-reset: linenumber NaN" class="language-typescript line-numbers"><code class="language-typescript"><span class="token comment">/**
+ * node에 페이지의 주소를 담은 slug field를 추가함
+ */</span>
+exports<span class="token punctuation">.</span><span class="token function-variable function">onCreateNode</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> node<span class="token punctuation">,</span> actions<span class="token punctuation">,</span> getNode <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> createNodeField <span class="token punctuation">}</span> <span class="token operator">=</span> actions<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>node<span class="token punctuation">.</span>internal<span class="token punctuation">.</span>type <span class="token operator">===</span> <span class="token string">"MarkdownRemark"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> value <span class="token operator">=</span> <span class="token function">createFilePath</span><span class="token punctuation">(</span><span class="token punctuation">{</span> node<span class="token punctuation">,</span> getNode <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">createNodeField</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      name<span class="token operator">:</span> <span class="token string">"slug"</span><span class="token punctuation">,</span>
+      node<span class="token punctuation">,</span>
+      value<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>위와 같이 <code>gatsby-node.js</code>에 slug field를 만들어 페이지를 접근하는데 쓰일 주소를 넣어줘야 해요.
+이 과정이 없으면 query할 때 slug에 아무 값도 없어 제대로 동작하지 않아요.</p>
+<h3 id="페이지-보여주기" style="position:relative;"><a href="#%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B3%B4%EC%97%AC%EC%A3%BC%EA%B8%B0" aria-label="페이지 보여주기 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>페이지 보여주기</h3>
+<p>축하합니다! 이제 여러분들은 마크다운을 기반으로 생성된 페이지를 만들 수 있게 됐어요.</p>
+<p>물론, 주소로 페이지를 접근할 수 있게 됐다는 소리이기도 합니다. 한 번 들어가보세요. 쩔어주는 페이지가 여러분을 기다리고 있습니다.</p>
+<p>하지만 블로그에서 가장 중요한 과정이 남았어요. 우리 모두 구질구질하게 주소를 입력해서 글을 찾아보진 않죠?</p>
+<p>바로 생성된 블로그의 글들을, 페이지들을, 사람들에게 보여줘야 한다는 것!</p>
+<div class="gatsby-highlight" data-language="jsx"><pre style="counter-reset: linenumber NaN" class="language-jsx line-numbers"><code class="language-jsx"><span class="token keyword">const</span> <span class="token function-variable function">IndexPage</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> data <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token comment">// 페이지들 가져오기</span>
+  <span class="token keyword">const</span> posts <span class="token operator">=</span> data<span class="token punctuation">.</span>allMarkdownRemark<span class="token punctuation">.</span>nodes<span class="token punctuation">;</span>
+
+  <span class="token comment">// 페이지가 있으면 보여주기, 없으면 없다고 표시</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>posts<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>pageStyles<span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span><span class="token plain-text">Home Page</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span><span class="token plain-text">It's basic bLog</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">No bLog posts Found.</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">></span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>pageStyles<span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span><span class="token plain-text">Home Page</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span><span class="token plain-text">It's basic bLog</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token punctuation">{</span>posts<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">post</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+          <span class="token keyword">const</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">fields</span><span class="token operator">:</span> <span class="token punctuation">{</span> slug <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span> <span class="token operator">=</span> post<span class="token punctuation">;</span>
+          <span class="token keyword">const</span> <span class="token punctuation">{</span> title<span class="token punctuation">,</span> date <span class="token punctuation">}</span> <span class="token operator">=</span> post<span class="token punctuation">.</span>frontmatter<span class="token punctuation">;</span>
+          <span class="token keyword">return</span> <span class="token punctuation">(</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Link</span></span> <span class="token attr-name">to</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>slug<span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+              </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span><span class="token plain-text">
+                </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span><span class="token punctuation">{</span>title<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span class="token plain-text">
+              </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span><span class="token plain-text">
+              </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token punctuation">{</span>date<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Link</span></span><span class="token punctuation">></span></span>
+          <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">></span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> IndexPage<span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> pageQuery <span class="token operator">=</span> graphql<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      nodes {
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+        }
+        id
+        fields {
+          slug
+        }
+      }
+    }
+  }
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>query를 통해 모든 페이지 데이터를 가져온 다음 모두 표시해 주는거에요!
+이제 여러분들은 블로그의 마크다운 페이지에 접근할 수 있는 페이지까지 만들어 냈습니다!</p>
+<p>여기서 더 무엇이 필요할까요? 축하합니다. 여러분들은 마침내 가장 기본적인 블로그를 만들어 냈습니다!</p>
+<p>이제는 여러분들의 차례입니다. 마음대로 주무르세요! 세상 모든 사람들이 반할만한 개쩌는 블로그를 만들어 보세요!!</p></section></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/블로그에서 기록을 추구하면 안 되는 걸까/";window.___webpackCompilationHash="fae867cc0ea84673653c";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-9b448caf838dbc18971d.js"],"app":["/app-423680434a9201db7ee2.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-1013cbdf27b7225f497f.js"],"component---src-pages-index-js":["/component---src-pages-index-js-d79b3eb9493dac81784f.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-549bf8357642c940d19b.js"],"component---src-templates-tag-page-js":["/component---src-templates-tag-page-js-407c8a7c33abc6ac453d.js"]};/*]]>*/</script><script src="/b-log/polyfill-9b448caf838dbc18971d.js" nomodule=""></script><script src="/b-log/component---src-templates-blog-post-js-549bf8357642c940d19b.js" async=""></script><script src="/b-log/8c818aafd19f020a43cdd28cb6a1c8df7d18c0d2-0fdccc7611a7c55272d7.js" async=""></script><script src="/b-log/app-423680434a9201db7ee2.js" async=""></script><script src="/b-log/framework-2c67c8bfa55bfd760b60.js" async=""></script><script src="/b-log/webpack-runtime-76465a399045a41f636f.js" async=""></script></body></html>

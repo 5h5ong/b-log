@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-page-js",
+    "path": "/tags/expo",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/React Navigation은 상태바가 싫대요/"},"frontmatter":{"title":"React Navigation은 상태바가 싫대요","date":"February 16, 2022","tags":["expo","solution"]}}}]}},"pageContext":{"tag":"expo"}},
+    "staticQueryHashes": []}
